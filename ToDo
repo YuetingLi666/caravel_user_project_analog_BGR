@@ -1,0 +1,3 @@
+1. use other metal to route power/ground rails 
+2. bgr_final: VDD into vccd1, VSS into vssa1
+3. change the nmos_flat, pmos_flat (0 0 1 20 0)
