@@ -83,11 +83,7 @@
 + la_oenb[21] la_oenb[20] la_oenb[19] la_oenb[18] la_oenb[17] la_oenb[16] la_oenb[15] la_oenb[14] la_oenb[13]
 + la_oenb[12] la_oenb[11] la_oenb[10] la_oenb[9] la_oenb[8] la_oenb[7] la_oenb[6] la_oenb[5] la_oenb[4]
 + la_oenb[3] la_oenb[2] la_oenb[1] la_oenb[0]
-*.PININFO vdda1:B vdda2:B vssa1:B vssa2:B vccd1:B vccd2:B vssd1:B vssd2:B wb_clk_i:I wb_rst_i:I
-*+ wbs_stb_i:I wbs_cyc_i:I wbs_we_i:I wbs_sel_i[3:0]:I wbs_dat_i[31:0]:I wbs_adr_i[31:0]:I wbs_ack_o:O
-*+ wbs_dat_o[31:0]:O la_data_in[127:0]:I la_data_out[127:0]:O io_in[26:0]:I io_in_3v3[26:0]:I user_clock2:I
-*+ io_out[26:0]:O io_oeb[26:0]:O gpio_analog[17:0]:B gpio_noesd[17:0]:B io_analog[10:0]:B io_clamp_high[2:0]:B
-*+ io_clamp_low[2:0]:B user_irq[2:0]:O la_oenb[127:0]:I
+
 XM1 gpio_analog[1] vssa1 vssa1 vssa1 sky130_fd_pr__nfet_01v8_lvt L=1 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=20 m=20 
@@ -115,11 +111,9 @@ XM8 gpio_analog[2] vccd1 vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 ad
 x1 vccd1 gpio_analog[3] gpio_analog[2] gpio_analog[5] gpio_analog[1] vssa1 bgr_final
 .ends
 
-* expanding   symbol:  bgr_final.sym # of pins=6
-* sym_path: /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/bgr_final.sym
-* sch_path: /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/bgr_final.sch
+
 .subckt bgr_final  vccd1 porst vbg va vb vssa1
-*.PININFO porst:I vbg:O va:O vb:O vccd1:I vssa1:I
+
 XM5 vgate va vq vssa1 sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=9 m=9 
@@ -200,37 +194,24 @@ x25 vccd1 vssa1 vssa1 va vssa1 sky130_asc_pnp_05v5_W3p40L3p40_1
 .ends
 
 
-* expanding   symbol:  analog_stdcells/skywater_asc_res_xhigh_po_2p85_1.sym # of pins=4
-* sym_path:
-*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/analog_stdcells/skywater_asc_res_xhigh_po_2p85_1.sym
-* sch_path:
-*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/analog_stdcells/skywater_asc_res_xhigh_po_2p85_1.sch
+
 .subckt skywater_asc_res_xhigh_po_2p85_1  Rout Rin vccd1 vssa1
-*.PININFO Rin:B Rout:B vccd1:B vssa1:B
+
 XR1 net1 Rin vssa1 sky130_fd_pr__res_xhigh_po W=2.85 L=7.88 mult=1 m=1
 XR2 net1 Rout vssa1 sky130_fd_pr__res_xhigh_po W=2.85 L=7.88 mult=1 m=1
 .ends
 
 
-* expanding   symbol:  xschem/skywater_asc_res_xhigh_po_2p85_2.sym # of pins=4
-* sym_path:
-*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/skywater_asc_res_xhigh_po_2p85_2.sym
-* sch_path:
-*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/skywater_asc_res_xhigh_po_2p85_2.sch
 .subckt skywater_asc_res_xhigh_po_2p85_2  Rout Rin vccd1 vssa1
-*.PININFO Rin:B Rout:B vccd1:B vssa1:B
+
 XR1 net1 Rin vssa1 sky130_fd_pr__res_xhigh_po W=2.85 L=10.75 mult=1 m=1
 XR2 net1 Rout vssa1 sky130_fd_pr__res_xhigh_po W=2.85 L=10.75 mult=1 m=1
 .ends
 
 
-* expanding   symbol:  xschem/sky130_asc_pnp_05v5_W3p40L3p40_8.sym # of pins=5
-* sym_path:
-*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_8.sym
-* sch_path:
-*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_8.sch
+
 .subckt sky130_asc_pnp_05v5_W3p40L3p40_8  VPWR VGND Base Emitter Collector
-*.PININFO Base:B Emitter:B Collector:B VPWR:B VGND:B
+
 XQ1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 XQ2 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 XQ3 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
@@ -241,14 +222,8 @@ XQ7 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 XQ8 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 .ends
 
-
-* expanding   symbol:  xschem/sky130_asc_pnp_05v5_W3p40L3p40_7.sym # of pins=5
-* sym_path:
-*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_7.sym
-* sch_path:
-*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_7.sch
 .subckt sky130_asc_pnp_05v5_W3p40L3p40_7  VPWR VGND Base Emitter Collector
-*.PININFO Base:B Emitter:B Collector:B VPWR:B VGND:B
+
 XQ1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 XQ2 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 XQ3 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
@@ -258,16 +233,8 @@ XQ6 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 XQ8 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 .ends
 
-
-* expanding   symbol:  xschem/sky130_asc_pnp_05v5_W3p40L3p40_1.sym # of pins=5
-* sym_path:
-*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_1.sym
-* sch_path:
-*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_1.sch
 .subckt sky130_asc_pnp_05v5_W3p40L3p40_1  VPWR VGND Base Emitter Collector
-*.PININFO Base:B Emitter:B Collector:B VPWR:B VGND:B
 XQ1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 .ends
 
-** flattened .save nodes
 .end
