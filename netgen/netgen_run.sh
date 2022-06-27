@@ -19,4 +19,4 @@
 # top-level xschem subcircuit from the wrapper testbench.
 #
 #--------------------------------------------------------------------------------
-netgen -batch lvs "user_analog_project_wrapper_layout.sp xiaolin_debug" "user_analog_project_wrapper.spice user_analog_project_wrapper" /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.tech/netgen/sky130A_setup.tcl lvs_results.log
+netgen -batch lvs "test.spice bgr_gen7" "test_source.spice bgr_gen8_0" /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.313/sky130/sky130A/libs.tech/netgen/sky130A_setup.tcl lvs_results.log

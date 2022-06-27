@@ -38,78 +38,78 @@ XM17 va vccd1 vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((n
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=12 m=12 
 XC1 vgate vccd1 sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=100 m=100
 XC2 vssa1 va sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=100 m=100
-x1 net2 net1 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x2 net3 net2 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x3 net4 net3 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x4 net5 net4 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x5 net1 va vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x6 net7 net6 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x13 net8 net7 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x14 net9 net8 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x15 net10 net9 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x16 net6 net5 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x7 net12 net11 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x8 net13 net12 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x9 net14 net13 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x10 net15 net14 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x11 net11 vb vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x12 net17 net16 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x18 net18 net17 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x19 net19 net18 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x20 net20 net19 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x21 net16 net15 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x32 net22 net21 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x33 net23 net22 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x34 net24 net23 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x35 net25 net24 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x36 net21 vbg vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x37 net27 net26 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x38 net28 net27 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x39 vssa1 net28 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x41 net26 net25 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x23 net29 vb vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x24 vbneg net29 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_1
-x17 vssa1 net10 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_2
-x22 vssa1 net20 vccd1 vssa1 skywater_asc_res_xhigh_po_2p85_2
-x31 vccd1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
-x26 vccd1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
-x27 vccd1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
-x28 vccd1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
-x29 vccd1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_7
-x25 vccd1 vssa1 vssa1 va vssa1 sky130_asc_pnp_05v5_W3p40L3p40_1
+x1 net6 net5 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x2 net7 net6 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x3 net8 net7 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x4 net9 net8 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x5 net5 va vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x6 net11 net10 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x13 net4 net11 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x14 net3 net4 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x15 net2 net3 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x16 net10 net9 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x32 net25 net24 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x33 net26 net25 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x34 net27 net26 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x35 net28 net27 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x36 net24 vbg vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x37 net22 net29 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x38 net23 net22 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x39 vssa1 net23 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x41 net29 net28 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x23 net1 vb vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x24 vbneg net1 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x17 vssa1 net2 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_2
+x31 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x26 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x27 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x28 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x29 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_7
+x25 vccd1 vssa1 vssa1 vssa1 va vssa1 sky130_asc_pnp_05v5_W3p40L3p40_1
+x7 net16 net15 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x8 net17 net16 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x9 net18 net17 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x10 net19 net18 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x11 net15 vb vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x12 net21 net20 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x18 net14 net21 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x19 net13 net14 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x20 net12 net13 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x21 net20 net19 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_1
+x22 vssa1 net12 vccd1 vssa1 vssa1 skywater_asc_res_xhigh_po_2p85_2
 .ends
 
-* expanding   symbol:  analog_stdcells/skywater_asc_res_xhigh_po_2p85_1.sym # of pins=4
+* expanding   symbol:  analog_stdcells/skywater_asc_res_xhigh_po_2p85_1.sym # of pins=5
 * sym_path:
 *+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/analog_stdcells/skywater_asc_res_xhigh_po_2p85_1.sym
 * sch_path:
 *+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/analog_stdcells/skywater_asc_res_xhigh_po_2p85_1.sch
-.subckt skywater_asc_res_xhigh_po_2p85_1  Rout Rin vccd1 vssa1
-*.PININFO Rin:B Rout:B vccd1:B vssa1:B
-XR1 net1 Rin vssa1 sky130_fd_pr__res_xhigh_po W=2.85 L=7.88 mult=1 m=1
-XR2 net1 Rout vssa1 sky130_fd_pr__res_xhigh_po W=2.85 L=7.88 mult=1 m=1
+.subckt skywater_asc_res_xhigh_po_2p85_1  Rout Rin VPWR VGND VSUBS
+*.PININFO Rin:B Rout:B VPWR:B VGND:B VSUBS:B
+XR1 net1 Rin VGND sky130_fd_pr__res_xhigh_po W=2.85 L=7.88 mult=1 m=1
+XR2 net1 Rout VGND sky130_fd_pr__res_xhigh_po W=2.85 L=7.88 mult=1 m=1
 .ends
 
 
-* expanding   symbol:  xschem/skywater_asc_res_xhigh_po_2p85_2.sym # of pins=4
+* expanding   symbol:  xschem/skywater_asc_res_xhigh_po_2p85_2.sym # of pins=5
 * sym_path:
 *+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/skywater_asc_res_xhigh_po_2p85_2.sym
 * sch_path:
 *+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/skywater_asc_res_xhigh_po_2p85_2.sch
-.subckt skywater_asc_res_xhigh_po_2p85_2  Rout Rin vccd1 vssa1
-*.PININFO Rin:B Rout:B vccd1:B vssa1:B
-XR1 net1 Rin vssa1 sky130_fd_pr__res_xhigh_po W=2.85 L=10.75 mult=1 m=1
-XR2 net1 Rout vssa1 sky130_fd_pr__res_xhigh_po W=2.85 L=10.75 mult=1 m=1
+.subckt skywater_asc_res_xhigh_po_2p85_2  Rout Rin VPWR VGND VSUBS
+*.PININFO Rin:B Rout:B VPWR:B VGND:B VSUBS:B
+XR1 net1 Rin VGND sky130_fd_pr__res_xhigh_po W=2.85 L=10.75 mult=1 m=1
+XR2 net1 Rout VGND sky130_fd_pr__res_xhigh_po W=2.85 L=10.75 mult=1 m=1
 .ends
 
 
-* expanding   symbol:  xschem/sky130_asc_pnp_05v5_W3p40L3p40_8.sym # of pins=5
+* expanding   symbol:  xschem/sky130_asc_pnp_05v5_W3p40L3p40_8.sym # of pins=6
 * sym_path:
 *+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_8.sym
 * sch_path:
 *+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_8.sch
-.subckt sky130_asc_pnp_05v5_W3p40L3p40_8  VPWR VGND Base Emitter Collector
-*.PININFO Base:B Emitter:B Collector:B VPWR:B VGND:B
+.subckt sky130_asc_pnp_05v5_W3p40L3p40_8  VPWR VGND VSUBS Base Emitter Collector
+*.PININFO Base:B Emitter:B Collector:B VPWR:B VGND:B VSUBS:B
 XQ1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 XQ2 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 XQ3 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
@@ -121,13 +121,13 @@ XQ8 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 .ends
 
 
-* expanding   symbol:  xschem/sky130_asc_pnp_05v5_W3p40L3p40_7.sym # of pins=5
+* expanding   symbol:  xschem/sky130_asc_pnp_05v5_W3p40L3p40_7.sym # of pins=6
 * sym_path:
 *+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_7.sym
 * sch_path:
 *+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_7.sch
-.subckt sky130_asc_pnp_05v5_W3p40L3p40_7  VPWR VGND Base Emitter Collector
-*.PININFO Base:B Emitter:B Collector:B VPWR:B VGND:B
+.subckt sky130_asc_pnp_05v5_W3p40L3p40_7  VPWR VGND VSUBS Base Emitter Collector
+*.PININFO Base:B Emitter:B Collector:B VPWR:B VGND:B VSUBS:B
 XQ1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 XQ2 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 XQ3 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
@@ -138,13 +138,13 @@ XQ8 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 .ends
 
 
-* expanding   symbol:  xschem/sky130_asc_pnp_05v5_W3p40L3p40_1.sym # of pins=5
+* expanding   symbol:  xschem/sky130_asc_pnp_05v5_W3p40L3p40_1.sym # of pins=6
 * sym_path:
 *+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_1.sym
 * sch_path:
 *+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/xschem/sky130_asc_pnp_05v5_W3p40L3p40_1.sch
-.subckt sky130_asc_pnp_05v5_W3p40L3p40_1  VPWR VGND Base Emitter Collector
-*.PININFO Base:B Emitter:B Collector:B VPWR:B VGND:B
+.subckt sky130_asc_pnp_05v5_W3p40L3p40_1  VPWR VGND VSUBS Base Emitter Collector
+*.PININFO Base:B Emitter:B Collector:B VPWR:B VGND:B VSUBS:B
 XQ1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 .ends
 

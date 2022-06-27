@@ -1,0 +1,17 @@
+**.subckt sky130_asc_pnp_05v5_W3p40L3p40_8 Base Emitter Collector VPWR VGND
+*.iopin Base
+*.iopin Emitter
+*.iopin Collector
+*.iopin VPWR
+*.iopin VGND
+XQ1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ2 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ3 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ4 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ5 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ6 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ7 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ8 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+**.ends
+** flattened .save nodes
+.end

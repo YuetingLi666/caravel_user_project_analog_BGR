@@ -1,0 +1,282 @@
+**.subckt test_source
+x1 __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 __UNCONNECTED_PIN__2 __UNCONNECTED_PIN__3
++ __UNCONNECTED_PIN__4 __UNCONNECTED_PIN__5 bgr_final_0
+x2 __UNCONNECTED_PIN__6 __UNCONNECTED_PIN__7 __UNCONNECTED_PIN__8 __UNCONNECTED_PIN__9 bgr_gen8_0
+**.ends
+
+* expanding   symbol:  multiple_bgr/bgr_final_0.sym # of pins=6
+* sym_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/bgr_final_0.sym
+* sch_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/bgr_final_0.sch
+.subckt bgr_final_0  vccd1 porst vbg va vb vssa1
+*.ipin porst
+*.opin vbg
+*.opin va
+*.opin vb
+*.ipin vccd1
+*.ipin vssa1
+XM5 vgate va vq vssa1 sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=9 m=9 
+XM6 vq Vx vssa1 vssa1 sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM9 vg vb vq vssa1 sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=9 m=9 
+XM7 Vx Vx vssa1 vssa1 sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM13 Vx vgate vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=12 m=12 
+XM1 va vgate vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=60 m=60 
+XM2 vb vgate vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=60 m=60 
+XM3 vbg vgate vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=60 m=60 
+XM4 vg vg vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+XM8 vgate vg vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=6 m=6 
+XM10 vgate porst vssa1 vssa1 sky130_fd_pr__nfet_01v8_lvt L='2' W='4' nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=9 m=9 
+XM17 va vccd1 vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=12 m=12 
+XC1 vgate vccd1 sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=100 m=100
+XC2 vssa1 va sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=100 m=100
+x30 net1 vb vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x24 vbneg net1 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x5 net5 va vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x1 net6 net5 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x2 net7 net6 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x3 net8 net7 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x4 net9 net8 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x16 net10 net9 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x6 net11 net10 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x13 net4 net11 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x14 net3 net4 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x15 net2 net3 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x17 vssa1 net2 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_2
+x7 net29 net15 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x8 vb net29 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x9 net16 net15 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x10 net17 net16 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x11 net18 net17 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x12 net19 net18 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x18 net20 net19 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x19 net14 net20 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x20 net13 net14 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x21 net12 net13 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x22 vssa1 net12 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_2
+x32 net23 vbg vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x33 net24 net23 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x34 net25 net24 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x35 net26 net25 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x36 net27 net26 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x37 net28 net27 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x38 net21 net28 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x39 net22 net21 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x40 vssa1 net22 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x23 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x26 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x27 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x28 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x29 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_7
+x25 vccd1 vssa1 vssa1 vssa1 va vssa1 sky130_asc_pnp_05v5_W3p40L3p40_1
+.ends
+
+
+* expanding   symbol:  multiple_bgr/bgr_gen8_0.sym # of pins=4
+* sym_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/bgr_gen8_0.sym
+* sch_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/bgr_gen8_0.sch
+.subckt bgr_gen8_0  vccd1 porst vbg vssa1
+*.ipin porst
+*.opin vbg
+*.ipin vccd1
+*.ipin vssa1
+XM5 vgate va vq vssa1 sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=9 m=9 
+XM6 vq Vx vssa1 vssa1 sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM9 vg vb vq vssa1 sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=9 m=9 
+XM7 Vx Vx vssa1 vssa1 sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM13 Vx vgate vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=12 m=12 
+XM1 va vgate vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=60 m=60 
+XM2 vb vgate vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=60 m=60 
+XM3 vbg vgate vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=60 m=60 
+XM4 vg vg vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+XM8 vgate vg vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=6 m=6 
+XM10 vgate porst vssa1 vssa1 sky130_fd_pr__nfet_01v8_lvt L='2' W='4' nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=9 m=9 
+XM17 va vccd1 vccd1 vccd1 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=12 m=12 
+XC1 vgate vccd1 sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=100 m=100
+XC2 vssa1 va sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=100 m=100
+x30 net1 vb vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x24 vbneg net1 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x5 net5 va vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x1 net6 net5 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x2 net7 net6 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x3 net8 net7 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x4 net9 net8 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x16 net10 net9 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x6 net11 net10 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x13 net4 net11 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x14 net3 net4 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x15 net2 net3 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x17 vssa1 net2 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_2
+x7 net15 vb vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x8 net16 net15 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x9 net17 net16 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x10 net18 net17 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x11 net19 net18 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x12 net20 net19 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x18 net21 net20 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x19 net14 net21 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x20 net13 net14 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x21 net12 net13 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x22 vssa1 net12 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_2
+x32 net24 vbg vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x33 net25 net24 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x34 net26 net25 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x35 net27 net26 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x36 net28 net27 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x37 net29 net28 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x38 net22 net29 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x39 net23 net22 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x40 vssa1 net23 vccd1 vssa1 vssa1 sky130_asc_res_xhigh_po_2p85_1
+x23 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x26 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x27 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x28 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_8
+x29 vccd1 vssa1 vssa1 vssa1 vbneg vssa1 sky130_asc_pnp_05v5_W3p40L3p40_7
+x25 vccd1 vssa1 vssa1 vssa1 va vssa1 sky130_asc_pnp_05v5_W3p40L3p40_1
+.ends
+
+
+* expanding   symbol:  multiple_bgr/sky130_asc_res_xhigh_po_2p85_1.sym # of pins=5
+* sym_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/sky130_asc_res_xhigh_po_2p85_1.sym
+* sch_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/sky130_asc_res_xhigh_po_2p85_1.sch
+.subckt sky130_asc_res_xhigh_po_2p85_1  Rout Rin VPWR VGND VSUBS
+*.iopin Rin
+*.iopin Rout
+*.iopin VPWR
+*.iopin VGND
+*.iopin VSUBS
+XR1 Rin net1 VGND sky130_fd_pr__res_xhigh_po W=2.85 L=7.88 mult=1 m=1
+XR2 Rout net1 VGND sky130_fd_pr__res_xhigh_po W=2.85 L=7.88 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  multiple_bgr/sky130_asc_res_xhigh_po_2p85_2.sym # of pins=5
+* sym_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/sky130_asc_res_xhigh_po_2p85_2.sym
+* sch_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/sky130_asc_res_xhigh_po_2p85_2.sch
+.subckt sky130_asc_res_xhigh_po_2p85_2  Rout Rin VPWR VSUBS VGND
+*.iopin Rin
+*.iopin Rout
+*.iopin VPWR
+*.iopin VSUBS
+*.iopin VGND
+XR1 net1 Rin VGND sky130_fd_pr__res_xhigh_po W=2.85 L=10.75 mult=1 m=1
+XR2 net1 Rout VGND sky130_fd_pr__res_xhigh_po W=2.85 L=10.75 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  multiple_bgr/sky130_asc_pnp_05v5_W3p40L3p40_8.sym # of pins=6
+* sym_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/sky130_asc_pnp_05v5_W3p40L3p40_8.sym
+* sch_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/sky130_asc_pnp_05v5_W3p40L3p40_8.sch
+.subckt sky130_asc_pnp_05v5_W3p40L3p40_8  VPWR VGND VSUBS Base Emitter Collector
+*.iopin Base
+*.iopin Emitter
+*.iopin Collector
+*.iopin VPWR
+*.iopin VGND
+*.iopin VSUBS
+XQ1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ2 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ3 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ4 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ5 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ6 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ7 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ8 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+.ends
+
+
+* expanding   symbol:  multiple_bgr/sky130_asc_pnp_05v5_W3p40L3p40_7.sym # of pins=6
+* sym_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/sky130_asc_pnp_05v5_W3p40L3p40_7.sym
+* sch_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/sky130_asc_pnp_05v5_W3p40L3p40_7.sch
+.subckt sky130_asc_pnp_05v5_W3p40L3p40_7  VPWR VGND VSUBS Base Emitter Collector
+*.iopin Base
+*.iopin Emitter
+*.iopin Collector
+*.iopin VPWR
+*.iopin VGND
+*.iopin VSUBS
+XQ1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ2 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ3 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ4 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ5 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ6 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ8 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+.ends
+
+
+* expanding   symbol:  multiple_bgr/sky130_asc_pnp_05v5_W3p40L3p40_1.sym # of pins=6
+* sym_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/sky130_asc_pnp_05v5_W3p40L3p40_1.sym
+* sch_path:
+*+ /scratch/users/lyt1314/caravel_user_project_analog_BGR/xschem/multiple_bgr/sky130_asc_pnp_05v5_W3p40L3p40_1.sch
+.subckt sky130_asc_pnp_05v5_W3p40L3p40_1  VPWR VGND VSUBS Base Emitter Collector
+*.iopin Base
+*.iopin Emitter
+*.iopin Collector
+*.iopin VPWR
+*.iopin VGND
+*.iopin VSUBS
+XQ1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+.ends
+
+** flattened .save nodes
+.end

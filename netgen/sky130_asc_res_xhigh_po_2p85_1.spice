@@ -1,0 +1,7 @@
+.subckt sky130_asc_res_xhigh_po_2p85_1 Rin Rout VPWR VGND VSUBS
+*.PININFO Rin:B Rout:B VPWR:B VGND:B VSUBS:B
+XR1 Rin net1 VGND sky130_fd_pr__res_xhigh_po W=2.85 L=7.88 mult=1 m=1
+XR2 Rout net1 VGND sky130_fd_pr__res_xhigh_po W=2.85 L=7.88 mult=1 m=1
+.ends
+** flattened .save nodes
+.end
