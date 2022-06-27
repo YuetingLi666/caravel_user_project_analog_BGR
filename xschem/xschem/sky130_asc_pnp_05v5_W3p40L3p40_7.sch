@@ -66,3 +66,6 @@ C {devices/iopin.sym} 110 -790 2 0 {name=p4 lab=VPWR
 }
 C {devices/iopin.sym} 110 -760 2 0 {name=p5 lab=VGND
 }
+C {devices/iopin.sym} 110 -730 2 0 {name=p6 lab=VSUBS
+
+}

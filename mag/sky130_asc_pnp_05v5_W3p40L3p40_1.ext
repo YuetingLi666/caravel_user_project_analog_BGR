@@ -1,4 +1,4 @@
-timestamp 1654899324
+timestamp 1653547684
 version 8.3
 tech sky130A
 style ngspice()
@@ -21,9 +21,9 @@ node "Base" 6298 2034.14 894 1372 li 0 0 0 0 0 0 0 0 256320 7120 0 0 0 0 0 0 0 0
 equiv "Base" "xm1/Base"
 substrate "Collector" 0 0 930 1524 li 0 0 0 0 0 0 0 0 0 0 479548 9496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 470844 9512 0 0 0 0 0 0 0 0 0 0 0 0
 equiv "Collector" "xm1/Collector"
-cap "VGND" "Base" 80.1525
-cap "Base" "VPWR" 80.1525
-cap "Base" "Emitter" 1253.68
 cap "VGND" "Emitter" 73.6612
-cap "Emitter" "VPWR" 73.6612
-device msubckt sky130_fd_pr__pnp_05v5 273 423 274 424 "None" "Base" 0 0 "Emitter" 1290 0 "Collector" 1290 0
+cap "VPWR" "Base" 80.1525
+cap "Base" "Emitter" 1253.68
+cap "VGND" "Base" 80.1525
+cap "VPWR" "Emitter" 73.6612
+device msubckt sky130_fd_pr__pnp_05v5 273 423 274 424 "None" "Base" 0 0 "Emitter" 0 0 "Collector" 0 0

@@ -1,18 +1,23 @@
-timestamp 1654925908
+timestamp 1655768078
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-use nmos_flat nmos_flat_0 -1 0 563108 0 1 312192
-use pmos_flat pmos_flat_4 -1 0 577662 0 1 312278
+use pmos_flat pmos_flat_2 -1 0 577239 0 1 358420
+use pmos_flat pmos_flat_3 -1 0 577669 0 1 312352
 use bgr_final bgr_final_0 0 -1 542076 -1 0 414982
-use nmos_flat nmos_flat_3 -1 0 563324 0 1 403568
-use nmos_flat nmos_flat_1 -1 0 563218 0 1 358062
-use nmos_flat nmos_flat_2 -1 0 563312 0 1 492942
-use pmos_flat pmos_flat_0 -1 0 577190 0 1 492756
-use pmos_flat pmos_flat_1 -1 0 577078 0 1 403900
-use pmos_flat pmos_flat_2 -1 0 577242 0 1 358362
+use nmos_flat nmos_flat_1 -1 0 563071 0 1 312130
+use nmos_flat nmos_flat_0 -1 0 563137 0 1 358066
+use pmos_flat pmos_flat_0 -1 0 577475 0 1 448328
+use pmos_flat pmos_flat_1 -1 0 577193 0 1 403846
+use nmos_flat nmos_flat_3 -1 0 563167 0 1 448522
+use nmos_flat nmos_flat_2 -1 0 563201 0 1 403534
+use pmos_flat pmos_flat_5 -1 0 577403 0 1 508572
+use bandgaptop_flat_io bandgaptop_flat_io_0 0 1 -129800 -1 0 972356
+use nmos_flat nmos_flat_5 -1 0 563303 0 1 508484
+use pmos_flat pmos_flat_4 -1 0 577171 0 1 582062
+use nmos_flat nmos_flat_4 -1 0 563375 0 1 582166
 port "io_analog[4]" 82 329294 702300 334294 704800 m5
 port "io_analog[4]" 82 318994 702300 323994 704800 m5
 port "io_analog[5]" 83 227594 702300 232594 704800 m5
@@ -140,18 +145,17 @@ port "io_in_3v3[10]" 122 583520 407660 584800 407772 m3
 port "io_in[10]" 95 583520 408842 584800 408954 m3
 port "io_out[10]" 176 583520 410024 584800 410136 m3
 port "io_oeb[10]" 149 583520 411206 584800 411318 m3
-port "gpio_analog[4]" 53 583520 449718 584800 449830 m3
-port "gpio_noesd[4]" 71 583520 450900 584800 451012 m3
-port "io_in_3v3[11]" 123 583520 452082 584800 452194 m3
-port "io_in[11]" 96 583520 453264 584800 453376 m3
-port "io_out[11]" 177 583520 454446 584800 454558 m3
-port "io_oeb[11]" 150 583520 455628 584800 455740 m3
 port "io_oeb[16]" 155 -800 419176 480 419288 m3
 port "io_out[16]" 182 -800 420358 480 420470 m3
 port "io_in[16]" 101 -800 421540 480 421652 m3
 port "io_in_3v3[16]" 128 -800 422722 480 422834 m3
 port "gpio_noesd[9]" 76 -800 423904 480 424016 m3
 port "gpio_analog[9]" 58 -800 425086 480 425198 m3
+port "gpio_noesd[4]" 71 583520 450900 584800 451012 m3
+port "io_in_3v3[11]" 123 583520 452082 584800 452194 m3
+port "io_in[11]" 96 583520 453264 584800 453376 m3
+port "io_out[11]" 177 583520 454446 584800 454558 m3
+port "io_oeb[11]" 150 583520 455628 584800 455740 m3
 port "io_oeb[15]" 154 -800 462398 480 462510 m3
 port "io_out[15]" 181 -800 463580 480 463692 m3
 port "io_in[15]" 100 -800 464762 480 464874 m3
@@ -173,7 +177,6 @@ port "vdda1" 592 582340 540562 584800 545362 m3
 port "vdda1" 592 582340 550562 584800 555362 m3
 port "vssa2" 595 0 549442 1660 554242 m3
 port "vssa2" 595 0 559442 1660 564242 m3
-port "gpio_analog[6]" 55 583520 583562 584800 583674 m3
 port "gpio_noesd[6]" 73 583520 584744 584800 584856 m3
 port "io_in_3v3[13]" 125 583520 585926 584800 586038 m3
 port "io_in[13]" 98 583520 587108 584800 587220 m3
@@ -698,11 +701,13 @@ port "wb_clk_i" 598 524 -800 636 480 m2
 port "gpio_analog[1]" 50 583520 313652 584800 313764 m3
 port "gpio_analog[2]" 51 583520 358874 584800 358986 m3
 port "gpio_analog[3]" 52 583520 405296 584800 405408 m3
-port "vssa1" 594 510594 702340 515394 704800 m3
-port "vssa1" 594 520594 702340 525394 704800 m3
+port "gpio_analog[4]" 53 583520 449718 584800 449830 m3
 port "gpio_analog[5]" 54 583520 494140 584800 494252 m3
+port "gpio_analog[6]" 55 583520 583562 584800 583674 m3
 port "vccd1" 590 582340 629784 584800 634584 m3
 port "vccd1" 590 582340 639784 584800 644584 m3
+port "vssa1" 594 510594 702340 515394 704800 m3
+port "vssa1" 594 520594 702340 525394 704800 m3
 node "io_analog[4]" 0 2913.75 329294 702300 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12500000 15000 0 0
 node "io_analog[4]" 0 2913.75 318994 702300 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12500000 15000 0 0
 node "io_analog[5]" 0 2913.75 227594 702300 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12500000 15000 0 0
@@ -830,25 +835,24 @@ node "io_in_3v3[10]" 1 545.514 583520 407660 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "io_in[10]" 1 545.514 583520 408842 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_out[10]" 1 545.514 583520 410024 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_oeb[10]" 1 580.214 583520 411206 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
-node "gpio_analog[4]" 1 580.214 583520 449718 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
-node "gpio_noesd[4]" 1 545.514 583520 450900 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
-node "io_in_3v3[11]" 1 545.514 583520 452082 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
-node "io_in[11]" 1 545.514 583520 453264 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
-node "io_out[11]" 1 545.514 583520 454446 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
-node "io_oeb[11]" 1 580.214 583520 455628 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_oeb[16]" 1 580.214 -800 419176 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_out[16]" 1 545.514 -800 420358 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_in[16]" 1 545.514 -800 421540 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_in_3v3[16]" 1 545.514 -800 422722 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "gpio_noesd[9]" 1 545.514 -800 423904 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "gpio_analog[9]" 1 580.214 -800 425086 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
+node "gpio_noesd[4]" 1 558.14 583520 450900 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
+node "io_in_3v3[11]" 1 545.514 583520 452082 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
+node "io_in[11]" 1 545.514 583520 453264 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
+node "io_out[11]" 1 545.514 583520 454446 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
+node "io_oeb[11]" 1 580.214 583520 455628 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_oeb[15]" 1 580.214 -800 462398 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_out[15]" 1 545.514 -800 463580 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_in[15]" 1 545.514 -800 464762 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_in_3v3[15]" 1 545.514 -800 465944 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "gpio_noesd[8]" 1 545.514 -800 467126 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "gpio_analog[8]" 1 580.214 -800 468308 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
-node "gpio_noesd[5]" 1 557.01 583520 495322 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
+node "gpio_noesd[5]" 1 549.111 583520 495322 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_in_3v3[12]" 1 545.514 583520 496504 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_in[12]" 1 545.514 583520 497686 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_out[12]" 1 545.514 583520 498868 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
@@ -863,8 +867,7 @@ node "vdda1" 0 6627.5 582340 540562 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "vdda1" 0 6627.5 582340 550562 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11808000 14520 0 0 0 0 0 0
 node "vssa2" 0 6627.5 0 549442 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11808000 14520 0 0 0 0 0 0
 node "vssa2" 0 6627.5 0 559442 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11808000 14520 0 0 0 0 0 0
-node "gpio_analog[6]" 1 580.214 583520 583562 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
-node "gpio_noesd[6]" 1 545.514 583520 584744 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
+node "gpio_noesd[6]" 1 557.829 583520 584744 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_in_3v3[13]" 1 545.514 583520 585926 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_in[13]" 1 545.514 583520 587108 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_out[13]" 1 545.514 583520 588290 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
@@ -1385,880 +1388,1049 @@ node "wbs_cyc_i" 1 522.256 4070 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "wbs_ack_o" 1 522.256 2888 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 node "wb_rst_i" 1 522.256 1706 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 node "wb_clk_i" 1 554.223 524 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
-node "m1_565562_311061#" 10 4002.44 565562 311061 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1171320 19762 0 0 0 0 0 0 0 0 0 0
-node "gpio_analog[1]" 5 58325 583520 313652 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1119176 11132 109792 2296 22459871 238526 0 0 0 0 0 0
-node "m1_565792_357004#" 10 4142.07 565792 357004 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1104240 18644 0 0 0 0 0 0 0 0 0 0
-node "gpio_analog[2]" 6 31286.3 583520 358874 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 714887 10966 82760 1940 7906664 129568 0 0 0 0 0 0
-node "m1_565664_402464#" 10 4228.67 565664 402464 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1159080 19558 0 0 0 0 0 0 0 0 0 0
-node "gpio_analog[3]" 6 28697.8 583520 405296 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 788124 11468 74012 1784 6601782 117870 0 0 0 0 0 0
-node "m1_565844_491493#" 10 4294.96 565844 491493 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1150800 19420 0 0 0 0 0 0 0 0 0 0
-node "vssa1" 8 1.28847e+06 520594 702340 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1533230 17972 180808 3400 145905878 83250 4814937568 1258440 0 0 0 0
-node "gpio_analog[5]" 5 75778.8 583520 494140 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 870203 11286 87976 1684 20271832 326910 0 0 0 0 0 0
-node "vccd1" 2 934689 582340 639784 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9158028 126380 433268 5260 170540782 95046 54913240 47788 3722923878 1408066 0 0
+node "m1_565562_311061#" 10 3633.39 565562 311061 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1171320 19762 0 0 0 0 0 0 0 0 0 0
+node "m1_565792_357004#" 10 3949.13 565792 357004 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1104240 18644 0 0 0 0 0 0 0 0 0 0
+node "m1_565664_402464#" 10 3826.72 565664 402464 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1159080 19558 0 0 0 0 0 0 0 0 0 0
+node "m1_565820_447081#" 10 3910.36 565820 447081 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1150800 19420 0 0 0 0 0 0 0 0 0 0
+node "m1_565574_507424#" 10 4467.58 565574 507424 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1167120 19692 0 0 0 0 0 0 0 0 0 0
+node "m1_565822_581106#" 10 4220.52 565822 581106 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1146480 19348 0 0 0 0 0 0 0 0 0 0
+node "gpio_analog[1]" 242 59100.4 583520 313652 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 142408 3428 1178559 11242 109792 2296 22459871 238526 0 0 0 0 0 0
+node "gpio_analog[2]" 311 31954.9 583520 358874 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118580 3504 688086 10602 82760 1940 7906664 129568 0 0 0 0 0 0
+node "gpio_analog[3]" 379 29208 583520 405296 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 124444 3942 658100 9880 74012 1784 6601782 117870 0 0 0 0 0 0
+node "gpio_analog[4]" 322 56331.7 583520 449718 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 119032 3574 755022 10094 87976 1684 14750390 238094 0 0 0 0 0 0
+node "gpio_analog[5]" 241 309304 583520 494140 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68560 2388 33080 1032 30340 992 887759216 166912 13392 464 0 0 0 0
+node "gpio_analog[6]" 251 51143.2 583520 583562 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68340 2410 582372 9584 31584 1004 8921454 154832 21128428 74518 0 0 0 0
+node "vccd1" 3897 1.8399e+06 582340 639784 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 772893 30768 12423728 179500 620996 7716 2274492822 694870 886464616 341350 3726925542 1409266 0 0
+node "vssa1" 3065 1.34877e+06 520594 702340 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 880708 29102 1846722 25904 248484 4820 502222166 218378 4815096832 1258488 0 0 0 0
 substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "io_in[18]" "io_out[18]" 67.2299
-cap "la_data_in[117]" "la_data_out[117]" 46.7738
-cap "la_data_in[98]" "la_data_out[98]" 46.7738
-cap "gpio_analog[1]" "vccd1" 3716.44
-cap "la_oenb[24]" "la_data_in[25]" 46.7738
-cap "wbs_dat_i[9]" "wbs_adr_i[9]" 46.7738
-cap "io_out[23]" "io_oeb[23]" 67.2299
-cap "io_out[9]" "io_in[9]" 67.2299
-cap "la_oenb[121]" "la_data_in[122]" 46.7738
-cap "la_data_in[57]" "la_data_out[57]" 46.7738
-cap "la_data_in[37]" "la_oenb[36]" 46.7738
-cap "io_in_3v3[24]" "gpio_noesd[17]" 67.2299
-cap "io_in_3v3[12]" "gpio_noesd[5]" 67.2299
-cap "vccd1" "m1_565792_357004#" 1076.77
-cap "gpio_analog[2]" "vssa1" 5509.89
-cap "la_oenb[72]" "la_data_in[73]" 46.7738
-cap "la_data_out[35]" "la_data_in[35]" 46.7738
-cap "la_oenb[20]" "la_data_out[20]" 46.7738
-cap "wbs_dat_o[0]" "wbs_dat_i[0]" 46.7738
-cap "la_data_in[93]" "la_data_out[93]" 46.7738
-cap "wbs_dat_o[7]" "wbs_dat_i[7]" 46.7738
-cap "io_oeb[1]" "io_out[1]" 67.2299
-cap "la_data_out[123]" "la_oenb[123]" 46.7738
-cap "la_data_in[113]" "la_data_out[113]" 46.7738
-cap "la_data_out[125]" "la_oenb[125]" 46.7738
-cap "la_data_in[114]" "la_oenb[113]" 46.7738
-cap "la_data_out[112]" "la_oenb[112]" 46.7738
-cap "gpio_analog[17]" "gpio_noesd[17]" 67.2299
-cap "gpio_noesd[13]" "io_in_3v3[20]" 67.2299
-cap "la_data_out[114]" "la_oenb[114]" 46.7738
-cap "la_data_in[88]" "la_oenb[87]" 46.7738
-cap "io_analog[4]" "io_analog[4]" 21353.1
-cap "la_oenb[23]" "la_data_out[23]" 46.7738
-cap "wbs_adr_i[2]" "wbs_dat_i[2]" 46.7738
-cap "io_in[3]" "io_in_3v3[3]" 67.2299
-cap "la_data_in[81]" "la_data_out[81]" 46.7738
-cap "la_oenb[62]" "la_data_in[63]" 46.7738
-cap "io_analog[5]" "io_analog[5]" 26259.4
-cap "la_data_in[71]" "la_oenb[70]" 46.7738
-cap "la_data_out[59]" "la_oenb[59]" 46.7738
-cap "la_oenb[39]" "la_data_in[40]" 46.7738
-cap "wbs_dat_i[31]" "wbs_dat_o[31]" 46.7738
-cap "wbs_dat_o[27]" "wbs_dat_i[27]" 46.7738
-cap "io_in[21]" "io_in_3v3[21]" 67.2299
-cap "la_data_out[15]" "la_data_in[15]" 46.7738
-cap "wbs_dat_o[30]" "wbs_adr_i[31]" 46.7738
-cap "la_data_in[120]" "la_data_out[120]" 46.7738
-cap "la_data_out[17]" "la_data_in[17]" 46.7738
-cap "la_oenb[115]" "la_data_in[116]" 46.7738
-cap "la_data_in[104]" "la_data_out[104]" 46.7738
-cap "la_oenb[32]" "la_data_out[32]" 46.7738
-cap "la_data_in[20]" "la_data_out[20]" 46.7738
-cap "io_in_3v3[25]" "io_in[25]" 67.2299
-cap "gpio_noesd[8]" "io_in_3v3[15]" 67.2299
-cap "la_data_out[8]" "la_data_in[8]" 46.7738
-cap "io_oeb[6]" "io_out[6]" 67.2299
-cap "io_analog[4]" "io_analog[4]" 26259.4
-cap "la_data_in[119]" "la_data_out[119]" 46.7738
-cap "la_data_out[68]" "la_oenb[68]" 46.7738
-cap "io_in[19]" "io_out[19]" 67.2299
-cap "io_in[4]" "io_in_3v3[4]" 67.2299
-cap "wbs_adr_i[6]" "wbs_dat_i[6]" 46.7738
-cap "wbs_adr_i[7]" "wbs_dat_i[7]" 46.7738
-cap "la_data_out[110]" "la_oenb[110]" 46.7738
-cap "io_in[12]" "io_in_3v3[12]" 67.2299
-cap "la_data_out[118]" "la_oenb[118]" 46.7738
-cap "la_data_in[108]" "la_data_out[108]" 46.7738
-cap "la_data_in[71]" "la_data_out[71]" 46.7738
-cap "la_oenb[48]" "la_data_in[49]" 46.7738
-cap "io_out[7]" "io_in[7]" 67.2299
-cap "io_in[16]" "io_out[16]" 67.2299
-cap "la_data_in[68]" "la_oenb[67]" 46.7738
-cap "la_data_in[121]" "la_oenb[120]" 46.7738
-cap "la_data_in[94]" "la_oenb[93]" 46.7738
-cap "la_data_in[63]" "la_data_out[63]" 46.7738
-cap "la_data_in[20]" "la_oenb[19]" 46.7738
-cap "gpio_noesd[7]" "io_in_3v3[14]" 67.2299
-cap "la_data_out[106]" "la_oenb[106]" 46.7738
-cap "la_data_out[91]" "la_oenb[91]" 46.7738
-cap "la_data_out[44]" "la_data_in[44]" 46.7738
-cap "la_oenb[39]" "la_data_out[39]" 46.7738
-cap "wbs_dat_i[22]" "wbs_dat_o[22]" 46.7738
-cap "io_out[10]" "io_in[10]" 67.2299
-cap "la_oenb[22]" "la_data_in[23]" 46.7738
-cap "wb_rst_i" "wbs_ack_o" 46.7738
-cap "la_data_out[90]" "la_oenb[90]" 46.7738
-cap "la_data_out[45]" "la_data_in[45]" 46.7738
-cap "la_data_in[30]" "la_data_out[30]" 46.7738
-cap "io_in[24]" "io_out[24]" 67.2299
-cap "la_oenb[60]" "la_data_in[61]" 46.7738
-cap "wbs_adr_i[9]" "wbs_dat_o[8]" 46.7738
-cap "la_data_in[67]" "la_data_out[67]" 46.7738
-cap "la_data_out[24]" "la_oenb[24]" 46.7738
-cap "la_oenb[11]" "la_data_in[12]" 46.7738
-cap "wbs_adr_i[19]" "wbs_dat_i[19]" 46.7738
-cap "io_analog[5]" "io_analog[5]" 26259.4
-cap "la_data_in[107]" "la_oenb[106]" 46.7738
-cap "la_data_out[21]" "la_oenb[21]" 46.7738
-cap "io_in_3v3[9]" "gpio_noesd[2]" 67.2299
-cap "la_data_in[62]" "la_data_out[62]" 46.7738
-cap "la_data_out[126]" "la_oenb[126]" 46.7738
-cap "la_data_in[31]" "la_oenb[30]" 46.7738
-cap "la_data_out[7]" "la_data_in[7]" 46.7738
-cap "la_data_out[3]" "la_oenb[3]" 46.7738
-cap "wbs_dat_o[23]" "wbs_dat_i[23]" 46.7738
-cap "io_oeb[8]" "io_out[8]" 67.2299
-cap "la_oenb[71]" "la_data_in[72]" 46.7738
-cap "la_data_out[121]" "la_oenb[121]" 46.7738
-cap "la_data_in[29]" "la_oenb[28]" 46.7738
-cap "la_data_in[70]" "la_data_out[70]" 46.7738
-cap "la_data_in[1]" "la_data_out[1]" 46.7738
-cap "la_data_in[107]" "la_data_out[107]" 46.7738
-cap "la_oenb[57]" "la_data_in[58]" 46.7738
-cap "la_data_out[0]" "la_oenb[0]" 46.7738
-cap "user_irq[0]" "user_irq[1]" 46.7738
-cap "la_data_out[37]" "la_data_in[37]" 46.7738
-cap "wbs_dat_i[19]" "wbs_dat_o[19]" 46.7738
-cap "la_data_in[126]" "la_oenb[125]" 46.7738
-cap "la_oenb[51]" "la_data_in[52]" 46.7738
-cap "io_out[12]" "io_in[12]" 67.2299
-cap "la_data_out[95]" "la_oenb[95]" 46.7738
-cap "wbs_adr_i[5]" "wbs_dat_o[4]" 46.7738
-cap "la_data_out[16]" "la_oenb[16]" 46.7738
-cap "wbs_dat_i[4]" "wbs_adr_i[4]" 46.7738
-cap "gpio_noesd[14]" "io_in_3v3[21]" 67.2299
-cap "gpio_noesd[6]" "io_in_3v3[13]" 67.2299
-cap "la_data_out[115]" "la_oenb[115]" 46.7738
-cap "la_data_in[74]" "la_oenb[73]" 46.7738
-cap "wbs_dat_i[15]" "wbs_dat_o[15]" 46.7738
-cap "gpio_noesd[0]" "io_in_3v3[7]" 67.2299
-cap "la_oenb[65]" "la_data_in[66]" 46.7738
-cap "io_in[11]" "io_in_3v3[11]" 67.2299
-cap "la_data_in[125]" "la_data_out[125]" 46.7738
-cap "la_data_in[123]" "la_data_out[123]" 46.7738
-cap "la_data_in[115]" "la_oenb[114]" 46.7738
-cap "wbs_dat_i[4]" "wbs_dat_o[4]" 46.7738
-cap "io_in_3v3[17]" "gpio_noesd[10]" 67.2299
-cap "la_data_in[114]" "la_data_out[114]" 46.7738
-cap "la_data_in[112]" "la_data_out[112]" 46.7738
-cap "la_data_out[94]" "la_oenb[94]" 46.7738
-cap "io_out[3]" "io_in[3]" 67.2299
-cap "gpio_noesd[2]" "gpio_analog[2]" 67.3454
-cap "la_data_in[91]" "la_oenb[90]" 46.7738
-cap "io_analog[4]" "io_analog[4]" 21353.1
-cap "la_data_out[72]" "la_oenb[72]" 46.7738
-cap "la_oenb[96]" "la_data_in[97]" 46.7738
-cap "la_oenb[92]" "la_data_in[93]" 46.7738
-cap "wbs_dat_i[29]" "wbs_adr_i[29]" 46.7738
-cap "wbs_dat_o[19]" "wbs_adr_i[20]" 46.7738
-cap "io_analog[6]" "io_analog[6]" 26259.4
-cap "io_in[5]" "io_in_3v3[5]" 67.2299
-cap "la_data_in[59]" "la_data_out[59]" 46.7738
-cap "io_oeb[17]" "io_out[17]" 67.2299
-cap "la_data_in[102]" "la_oenb[101]" 46.7738
-cap "la_data_out[46]" "la_oenb[46]" 46.7738
-cap "la_oenb[20]" "la_data_in[21]" 46.7738
-cap "la_oenb[63]" "la_data_in[64]" 46.7738
-cap "io_analog[6]" "io_analog[6]" 26259.4
-cap "la_data_out[54]" "la_oenb[54]" 46.7738
-cap "io_in_3v3[2]" "io_oeb[1]" 67.2299
-cap "la_oenb[49]" "la_data_in[50]" 46.7738
-cap "wbs_adr_i[21]" "wbs_dat_o[20]" 46.7738
-cap "la_oenb[7]" "la_data_out[7]" 46.7738
-cap "la_data_out[1]" "la_oenb[1]" 46.7738
-cap "wbs_adr_i[13]" "wbs_dat_i[13]" 46.7738
-cap "gpio_analog[3]" "m1_565664_402464#" 63.3647
-cap "io_out[23]" "io_in[23]" 67.2299
-cap "la_data_in[68]" "la_data_out[68]" 46.7738
-cap "la_data_in[24]" "la_data_out[24]" 46.7738
-cap "wbs_dat_o[29]" "wbs_dat_i[29]" 46.7738
-cap "wbs_adr_i[17]" "wbs_dat_i[17]" 46.7738
-cap "la_data_out[41]" "la_oenb[41]" 46.7738
-cap "la_data_in[6]" "la_oenb[5]" 46.7738
-cap "la_data_in[0]" "la_data_out[0]" 46.7738
-cap "io_in_3v3[8]" "gpio_noesd[1]" 67.2299
-cap "la_oenb[34]" "la_data_out[34]" 46.7738
-cap "la_data_in[33]" "la_oenb[32]" 46.7738
-cap "la_oenb[17]" "la_data_out[17]" 46.7738
-cap "io_out[4]" "io_in[4]" 67.2299
-cap "la_oenb[82]" "la_data_in[83]" 46.7738
-cap "la_data_in[110]" "la_data_out[110]" 46.7738
-cap "wbs_dat_o[6]" "wbs_dat_i[6]" 46.7738
-cap "io_oeb[24]" "io_in_3v3[25]" 67.2299
-cap "la_data_in[118]" "la_data_out[118]" 46.7738
-cap "la_data_out[75]" "la_oenb[75]" 46.7738
-cap "la_oenb[29]" "la_data_in[30]" 46.7738
-cap "io_analog[6]" "io_clamp_low[2]" 468.333
-cap "gpio_analog[7]" "gpio_noesd[7]" 67.2299
-cap "la_data_in[106]" "la_data_out[106]" 46.7738
-cap "la_data_out[53]" "la_oenb[53]" 46.7738
-cap "wbs_dat_o[11]" "wbs_adr_i[12]" 46.7738
-cap "la_data_in[91]" "la_data_out[91]" 46.7738
-cap "la_data_in[86]" "la_oenb[85]" 46.7738
-cap "wbs_dat_o[7]" "wbs_adr_i[8]" 46.7738
-cap "la_data_in[90]" "la_data_out[90]" 46.7738
-cap "la_oenb[40]" "la_data_out[40]" 46.7738
-cap "gpio_analog[2]" "m1_565792_357004#" 15.6699
-cap "io_oeb[2]" "io_out[2]" 67.2299
-cap "la_data_in[43]" "la_data_out[43]" 46.7738
-cap "la_data_in[19]" "la_data_out[19]" 46.7738
-cap "la_oenb[17]" "la_data_in[18]" 46.7738
-cap "io_in[9]" "io_in_3v3[9]" 67.2299
-cap "la_data_in[104]" "la_oenb[103]" 46.7738
-cap "la_data_in[78]" "la_oenb[77]" 46.7738
-cap "la_oenb[16]" "la_data_in[17]" 46.7738
-cap "la_oenb[9]" "la_data_out[9]" 46.7738
-cap "la_data_out[13]" "la_oenb[13]" 46.7738
-cap "la_data_in[126]" "la_data_out[126]" 46.7738
-cap "gpio_analog[9]" "gpio_noesd[9]" 67.2299
-cap "la_data_in[5]" "la_oenb[4]" 46.7738
-cap "la_data_in[121]" "la_data_out[121]" 46.7738
-cap "la_data_out[58]" "la_oenb[58]" 46.7738
-cap "wbs_dat_o[21]" "wbs_adr_i[22]" 46.7738
-cap "la_oenb[124]" "la_data_in[125]" 46.7738
-cap "la_data_out[88]" "la_oenb[88]" 46.7738
-cap "la_data_out[4]" "la_data_in[4]" 46.7738
-cap "wbs_dat_i[22]" "wbs_adr_i[22]" 46.7738
-cap "la_data_in[57]" "la_oenb[56]" 46.7738
-cap "la_data_in[47]" "la_data_out[47]" 46.7738
-cap "user_clock2" "user_irq[0]" 46.7738
-cap "la_data_out[37]" "la_oenb[37]" 46.7738
-cap "wbs_adr_i[28]" "wbs_dat_o[27]" 46.7738
-cap "la_data_in[95]" "la_data_out[95]" 46.7738
-cap "la_data_out[64]" "la_oenb[64]" 46.7738
-cap "la_data_out[21]" "la_data_in[21]" 46.7738
-cap "la_data_in[14]" "la_data_out[14]" 46.7738
-cap "io_oeb[12]" "io_out[12]" 67.2299
-cap "la_data_in[111]" "la_oenb[110]" 46.7738
-cap "la_oenb[91]" "la_data_in[92]" 46.7738
-cap "la_data_out[61]" "la_oenb[61]" 46.7738
-cap "la_data_in[23]" "la_data_out[23]" 46.7738
-cap "la_oenb[9]" "la_data_in[10]" 46.7738
-cap "wbs_adr_i[16]" "wbs_dat_i[16]" 46.7738
-cap "wbs_adr_i[7]" "wbs_dat_o[6]" 46.7738
-cap "la_data_out[30]" "la_oenb[30]" 46.7738
-cap "la_data_in[15]" "la_oenb[14]" 46.7738
-cap "wbs_adr_i[21]" "wbs_dat_i[21]" 46.7738
-cap "io_in_3v3[2]" "io_in[2]" 67.2299
-cap "gpio_analog[14]" "gpio_noesd[14]" 67.2299
-cap "la_data_in[115]" "la_data_out[115]" 46.7738
-cap "la_data_out[25]" "la_data_in[25]" 46.7738
-cap "la_oenb[15]" "la_data_out[15]" 46.7738
-cap "io_in[15]" "io_out[15]" 67.2299
-cap "la_oenb[126]" "la_data_in[127]" 46.7738
-cap "io_out[11]" "io_in[11]" 67.2299
-cap "io_clamp_low[0]" "io_clamp_high[0]" 468.333
-cap "la_data_in[51]" "la_oenb[50]" 46.7738
-cap "wbs_adr_i[18]" "wbs_dat_i[18]" 46.7738
-cap "la_data_in[94]" "la_data_out[94]" 46.7738
-cap "io_analog[5]" "io_analog[5]" 21353.1
-cap "user_irq[2]" "user_irq[1]" 46.7738
-cap "la_oenb[127]" "user_clock2" 46.7738
-cap "la_oenb[3]" "la_data_in[4]" 46.7738
-cap "wbs_dat_o[28]" "wbs_adr_i[29]" 46.7738
-cap "la_data_in[72]" "la_data_out[72]" 46.7738
-cap "wbs_adr_i[16]" "wbs_dat_o[15]" 46.7738
-cap "io_in[1]" "io_out[1]" 67.2299
-cap "gpio_analog[3]" "vssa1" 5404.22
-cap "io_out[16]" "io_oeb[16]" 67.2299
-cap "la_data_out[25]" "la_oenb[25]" 46.7738
-cap "la_data_in[54]" "la_data_out[54]" 46.7738
-cap "la_data_out[31]" "la_oenb[31]" 46.7738
-cap "la_data_in[31]" "la_data_out[31]" 46.7738
-cap "io_in[6]" "io_in_3v3[6]" 67.2299
-cap "la_data_out[127]" "la_oenb[127]" 46.7738
-cap "la_data_out[92]" "la_oenb[92]" 46.7738
-cap "la_data_out[79]" "la_oenb[79]" 46.7738
-cap "la_oenb[27]" "la_data_out[27]" 46.7738
-cap "la_oenb[19]" "la_data_out[19]" 46.7738
-cap "la_data_out[12]" "la_data_in[12]" 46.7738
-cap "la_data_out[34]" "la_data_in[34]" 46.7738
-cap "wbs_dat_o[18]" "wbs_dat_i[18]" 46.7738
-cap "wbs_stb_i" "wbs_we_i" 46.7738
-cap "la_data_in[117]" "la_oenb[116]" 46.7738
-cap "la_data_out[65]" "la_oenb[65]" 46.7738
-cap "wbs_adr_i[17]" "wbs_dat_o[16]" 46.7738
-cap "io_clamp_high[2]" "io_clamp_low[2]" 468.333
-cap "wbs_dat_i[3]" "wbs_dat_o[3]" 46.7738
-cap "wbs_adr_i[3]" "wbs_dat_i[3]" 46.7738
-cap "wbs_adr_i[1]" "wbs_sel_i[0]" 46.7738
-cap "la_data_out[111]" "la_oenb[111]" 46.7738
-cap "la_data_in[75]" "la_data_out[75]" 46.7738
-cap "wbs_sel_i[2]" "wbs_adr_i[3]" 46.7738
-cap "io_in_3v3[10]" "gpio_noesd[3]" 67.2299
-cap "la_data_out[52]" "la_oenb[52]" 46.7738
-cap "la_oenb[40]" "la_data_in[41]" 46.7738
-cap "la_oenb[29]" "la_data_out[29]" 46.7738
-cap "la_data_in[53]" "la_oenb[52]" 46.7738
-cap "la_oenb[25]" "la_data_in[26]" 46.7738
-cap "wbs_dat_o[30]" "wbs_dat_i[30]" 46.7738
-cap "gpio_noesd[0]" "gpio_analog[0]" 67.2299
-cap "la_data_in[42]" "la_oenb[41]" 46.7738
-cap "la_data_out[2]" "la_oenb[2]" 46.7738
-cap "la_data_in[53]" "la_data_out[53]" 46.7738
-cap "wbs_adr_i[25]" "wbs_dat_i[25]" 46.7738
-cap "io_oeb[3]" "io_in_3v3[4]" 67.2299
-cap "la_data_in[69]" "la_oenb[68]" 46.7738
-cap "la_data_out[80]" "la_oenb[80]" 46.7738
-cap "gpio_noesd[11]" "io_in_3v3[18]" 67.2299
-cap "io_clamp_high[1]" "io_analog[5]" 468.333
-cap "la_data_out[124]" "la_oenb[124]" 46.7738
-cap "la_data_in[65]" "la_oenb[64]" 46.7738
-cap "vccd1" "gpio_analog[5]" 3325.87
-cap "io_in[14]" "io_in_3v3[14]" 67.2299
-cap "io_in_3v3[23]" "io_in[23]" 67.2299
-cap "la_data_in[82]" "la_oenb[81]" 46.7738
-cap "la_data_out[109]" "la_oenb[109]" 46.7738
-cap "la_oenb[22]" "la_data_out[22]" 46.7738
-cap "gpio_analog[1]" "vssa1" 6549
-cap "la_oenb[122]" "la_data_in[123]" 46.7738
-cap "wbs_we_i" "wbs_adr_i[0]" 46.7738
-cap "la_data_out[11]" "la_oenb[11]" 46.7738
-cap "wbs_dat_o[0]" "wbs_sel_i[0]" 46.7738
-cap "la_data_in[58]" "la_data_out[58]" 46.7738
-cap "la_data_out[38]" "la_data_in[38]" 46.7738
-cap "la_data_in[88]" "la_data_out[88]" 46.7738
-cap "la_data_in[22]" "la_data_out[22]" 46.7738
-cap "wbs_adr_i[6]" "wbs_dat_o[5]" 46.7738
-cap "la_oenb[2]" "la_data_in[3]" 46.7738
-cap "la_data_in[64]" "la_data_out[64]" 46.7738
-cap "la_data_in[27]" "la_oenb[26]" 46.7738
-cap "wbs_dat_i[31]" "wbs_adr_i[31]" 46.7738
-cap "la_data_out[96]" "la_oenb[96]" 46.7738
-cap "la_oenb[89]" "la_data_in[90]" 46.7738
-cap "la_data_in[80]" "la_oenb[79]" 46.7738
-cap "la_data_in[61]" "la_data_out[61]" 46.7738
-cap "la_data_in[60]" "la_oenb[59]" 46.7738
-cap "la_data_in[33]" "la_data_out[33]" 46.7738
-cap "wbs_adr_i[27]" "wbs_dat_o[26]" 46.7738
-cap "io_oeb[24]" "io_out[24]" 67.2299
-cap "la_oenb[119]" "la_data_in[120]" 46.7738
-cap "la_data_out[83]" "la_oenb[83]" 46.7738
-cap "io_in_3v3[1]" "io_oeb[0]" 67.2299
-cap "io_out[20]" "io_oeb[20]" 67.2299
-cap "gpio_analog[5]" "gpio_noesd[5]" 67.3177
-cap "io_analog[4]" "io_clamp_low[0]" 468.333
-cap "wbs_dat_o[22]" "wbs_adr_i[23]" 46.7738
-cap "la_data_out[48]" "la_oenb[48]" 46.7738
-cap "wbs_dat_o[24]" "wbs_dat_i[24]" 46.7738
-cap "la_data_in[13]" "la_oenb[12]" 46.7738
-cap "la_data_out[76]" "la_oenb[76]" 46.7738
-cap "wbs_adr_i[23]" "wbs_dat_i[23]" 46.7738
-cap "io_out[25]" "io_in[25]" 67.2299
-cap "la_data_out[74]" "la_oenb[74]" 46.7738
-cap "gpio_analog[1]" "m1_565562_311061#" 24.351
-cap "m1_565844_491493#" "vccd1" 1099.96
-cap "la_data_out[42]" "la_oenb[42]" 46.7738
-cap "io_in[17]" "io_out[17]" 67.2299
-cap "la_data_out[105]" "la_oenb[105]" 46.7738
-cap "la_data_out[103]" "la_oenb[103]" 46.7738
-cap "la_data_in[0]" "wbs_dat_o[31]" 46.7738
-cap "wbs_dat_i[9]" "wbs_dat_o[9]" 46.7738
-cap "la_data_in[113]" "la_oenb[112]" 46.7738
-cap "la_data_out[55]" "la_oenb[55]" 46.7738
-cap "la_data_in[127]" "la_data_out[127]" 46.7738
-cap "la_data_in[79]" "la_data_out[79]" 46.7738
-cap "la_data_in[92]" "la_data_out[92]" 46.7738
-cap "la_data_out[49]" "la_oenb[49]" 46.7738
-cap "io_clamp_high[2]" "io_analog[6]" 468.333
-cap "la_data_out[26]" "la_oenb[26]" 46.7738
-cap "io_out[19]" "io_oeb[19]" 67.2299
-cap "io_oeb[4]" "io_out[4]" 67.2299
-cap "la_data_in[108]" "la_oenb[107]" 46.7738
-cap "la_oenb[117]" "la_data_in[118]" 46.7738
-cap "la_data_in[65]" "la_data_out[65]" 46.7738
-cap "la_oenb[43]" "la_data_out[43]" 46.7738
-cap "io_oeb[5]" "io_out[5]" 67.2299
-cap "la_oenb[10]" "la_data_out[10]" 46.7738
-cap "la_oenb[7]" "la_data_in[8]" 46.7738
-cap "la_data_in[111]" "la_data_out[111]" 46.7738
-cap "la_data_in[9]" "la_data_out[9]" 46.7738
-cap "la_data_in[52]" "la_data_out[52]" 46.7738
-cap "la_data_out[26]" "la_data_in[26]" 46.7738
-cap "wbs_dat_o[21]" "wbs_dat_i[21]" 46.7738
-cap "io_out[2]" "io_in[2]" 67.2299
-cap "la_oenb[43]" "la_data_in[44]" 46.7738
-cap "la_data_out[29]" "la_data_in[29]" 46.7738
-cap "wbs_dat_i[16]" "wbs_dat_o[16]" 46.7738
-cap "wbs_dat_o[14]" "wbs_dat_i[14]" 46.7738
-cap "gpio_analog[2]" "vccd1" 2724.6
-cap "io_in_3v3[11]" "gpio_noesd[4]" 67.2299
-cap "la_oenb[88]" "la_data_in[89]" 46.7738
-cap "wbs_dat_o[11]" "wbs_dat_i[11]" 46.7738
-cap "io_in[0]" "io_in_3v3[0]" 67.2299
-cap "la_data_in[119]" "la_oenb[118]" 46.7738
-cap "la_data_in[80]" "la_data_out[80]" 46.7738
-cap "la_data_out[77]" "la_oenb[77]" 46.7738
-cap "la_data_out[41]" "la_data_in[41]" 46.7738
-cap "wbs_adr_i[26]" "wbs_dat_o[25]" 46.7738
-cap "wbs_adr_i[15]" "wbs_dat_i[15]" 46.7738
-cap "gpio_analog[11]" "gpio_noesd[11]" 67.2299
-cap "io_oeb[25]" "io_in_3v3[26]" 67.2299
-cap "io_clamp_low[1]" "io_clamp_high[1]" 468.333
-cap "la_data_in[124]" "la_data_out[124]" 46.7738
-cap "la_data_out[46]" "la_data_in[46]" 46.7738
-cap "la_data_out[2]" "la_data_in[2]" 46.7738
-cap "wbs_adr_i[28]" "wbs_dat_i[28]" 46.7738
-cap "la_data_out[85]" "la_oenb[85]" 46.7738
-cap "gpio_noesd[16]" "io_in_3v3[23]" 67.2299
-cap "la_data_out[101]" "la_oenb[101]" 46.7738
-cap "la_data_in[42]" "la_data_out[42]" 46.7738
-cap "wbs_dat_o[13]" "wbs_adr_i[14]" 46.7738
-cap "io_in[13]" "io_in_3v3[13]" 67.2299
-cap "wbs_dat_o[12]" "wbs_dat_i[12]" 46.7738
-cap "la_data_in[109]" "la_data_out[109]" 46.7738
-cap "la_data_out[87]" "la_oenb[87]" 46.7738
-cap "wbs_sel_i[3]" "wbs_dat_o[3]" 46.7738
-cap "io_out[14]" "io_oeb[14]" 67.2299
-cap "la_data_out[99]" "la_oenb[99]" 46.7738
-cap "io_in_3v3[8]" "io_in[8]" 67.2299
-cap "la_data_in[43]" "la_oenb[42]" 46.7738
-cap "io_out[0]" "io_oeb[0]" 67.2299
-cap "io_in_3v3[19]" "io_in[19]" 67.2299
-cap "la_data_out[56]" "la_oenb[56]" 46.7738
-cap "la_data_out[45]" "la_oenb[45]" 46.7738
-cap "la_data_in[28]" "la_oenb[27]" 46.7738
-cap "la_oenb[76]" "la_data_in[77]" 46.7738
-cap "la_data_out[69]" "la_oenb[69]" 46.7738
-cap "m1_565664_402464#" "vccd1" 1187.08
-cap "io_analog[5]" "io_analog[5]" 21353.1
-cap "m1_565844_491493#" "gpio_analog[5]" 5.79713
-cap "la_data_in[96]" "la_data_out[96]" 46.7738
-cap "wbs_adr_i[14]" "wbs_dat_i[14]" 46.7738
-cap "la_data_in[83]" "la_data_out[83]" 46.7738
-cap "wbs_adr_i[18]" "wbs_dat_o[17]" 46.7738
-cap "wbs_adr_i[2]" "wbs_sel_i[1]" 46.7738
-cap "gpio_analog[13]" "gpio_noesd[13]" 67.2299
-cap "la_oenb[55]" "la_data_in[56]" 46.7738
-cap "io_out[13]" "io_oeb[13]" 67.2299
-cap "la_data_out[18]" "la_oenb[18]" 46.7738
-cap "la_data_in[48]" "la_data_out[48]" 46.7738
-cap "la_data_in[32]" "la_oenb[31]" 46.7738
-cap "wbs_dat_i[11]" "wbs_adr_i[11]" 46.7738
-cap "io_analog[4]" "io_analog[4]" 26259.4
-cap "io_oeb[26]" "io_out[26]" 67.2299
-cap "la_data_out[102]" "la_oenb[102]" 46.7738
-cap "la_data_in[76]" "la_data_out[76]" 46.7738
-cap "la_data_out[44]" "la_oenb[44]" 46.7738
-cap "wbs_adr_i[11]" "wbs_dat_o[10]" 46.7738
-cap "la_data_in[103]" "la_oenb[102]" 46.7738
-cap "la_data_in[74]" "la_data_out[74]" 46.7738
-cap "wbs_dat_o[29]" "wbs_adr_i[30]" 46.7738
-cap "gpio_noesd[1]" "gpio_analog[1]" 67.4032
-cap "la_data_in[105]" "la_data_out[105]" 46.7738
-cap "io_in_3v3[17]" "io_in[17]" 67.2299
-cap "la_data_in[103]" "la_data_out[103]" 46.7738
-cap "la_oenb[8]" "la_data_out[8]" 46.7738
-cap "la_data_in[55]" "la_data_out[55]" 46.7738
-cap "gpio_analog[15]" "gpio_noesd[15]" 67.2299
-cap "io_out[20]" "io_in[20]" 67.2299
-cap "la_oenb[78]" "la_data_in[79]" 46.7738
-cap "la_data_out[73]" "la_oenb[73]" 46.7738
-cap "la_data_in[49]" "la_data_out[49]" 46.7738
-cap "la_data_out[89]" "la_oenb[89]" 46.7738
-cap "la_data_in[22]" "la_oenb[21]" 46.7738
-cap "wbs_adr_i[19]" "wbs_dat_o[18]" 46.7738
-cap "wbs_cyc_i" "wbs_stb_i" 46.7738
-cap "gpio_analog[10]" "gpio_noesd[10]" 67.2299
-cap "la_data_in[84]" "la_oenb[83]" 46.7738
-cap "wbs_dat_i[20]" "wbs_adr_i[20]" 46.7738
-cap "la_oenb[14]" "la_data_out[14]" 46.7738
-cap "io_out[22]" "io_oeb[22]" 67.2299
-cap "io_in_3v3[18]" "io_in[18]" 67.2299
-cap "la_data_out[122]" "la_oenb[122]" 46.7738
-cap "wbs_sel_i[3]" "wbs_adr_i[4]" 46.7738
-cap "io_in[22]" "io_out[22]" 67.2299
-cap "wbs_dat_o[23]" "wbs_adr_i[24]" 46.7738
-cap "wbs_dat_o[10]" "wbs_dat_i[10]" 46.7738
-cap "wbs_dat_o[2]" "wbs_dat_i[2]" 46.7738
-cap "la_data_in[62]" "la_oenb[61]" 46.7738
-cap "io_oeb[9]" "io_out[9]" 67.2299
-cap "la_data_in[81]" "la_oenb[80]" 46.7738
-cap "la_oenb[46]" "la_data_in[47]" 46.7738
-cap "la_data_in[77]" "la_data_out[77]" 46.7738
-cap "la_oenb[8]" "la_data_in[9]" 46.7738
-cap "wbs_dat_o[13]" "wbs_dat_i[13]" 46.7738
-cap "io_oeb[7]" "io_out[7]" 67.2299
-cap "la_data_in[39]" "la_data_out[39]" 46.7738
-cap "io_in[1]" "io_in_3v3[1]" 67.2299
-cap "la_data_out[84]" "la_oenb[84]" 46.7738
-cap "la_data_in[85]" "la_data_out[85]" 46.7738
-cap "la_oenb[84]" "la_data_in[85]" 46.7738
-cap "gpio_noesd[6]" "gpio_analog[6]" 67.2299
-cap "io_out[13]" "io_in[13]" 67.2299
-cap "la_data_in[101]" "la_data_out[101]" 46.7738
-cap "la_data_in[95]" "la_oenb[94]" 46.7738
-cap "la_oenb[58]" "la_data_in[59]" 46.7738
-cap "la_data_out[50]" "la_oenb[50]" 46.7738
-cap "wbs_dat_o[25]" "wbs_dat_i[25]" 46.7738
-cap "wbs_adr_i[12]" "wbs_dat_i[12]" 46.7738
-cap "io_oeb[3]" "io_out[3]" 67.2299
-cap "la_data_in[87]" "la_data_out[87]" 46.7738
-cap "la_data_out[60]" "la_oenb[60]" 46.7738
-cap "la_data_in[27]" "la_data_out[27]" 46.7738
-cap "vccd1" "vssa1" 71723.2
-cap "la_data_out[97]" "la_oenb[97]" 46.7738
-cap "la_oenb[33]" "la_data_in[34]" 46.7738
-cap "io_out[15]" "io_oeb[15]" 67.2299
-cap "io_in[14]" "io_out[14]" 67.2299
-cap "la_data_in[99]" "la_data_out[99]" 46.7738
-cap "la_data_in[45]" "la_oenb[44]" 46.7738
-cap "io_in[26]" "io_in_3v3[26]" 67.2299
-cap "io_out[21]" "io_oeb[21]" 67.2299
-cap "gpio_noesd[12]" "io_in_3v3[19]" 67.2299
-cap "la_oenb[86]" "la_data_in[87]" 46.7738
-cap "la_data_out[51]" "la_oenb[51]" 46.7738
-cap "io_out[11]" "io_oeb[11]" 67.2299
-cap "la_oenb[108]" "la_data_in[109]" 46.7738
-cap "la_data_in[69]" "la_data_out[69]" 46.7738
-cap "la_data_in[56]" "la_data_out[56]" 46.7738
-cap "la_data_in[48]" "la_oenb[47]" 46.7738
-cap "la_oenb[35]" "la_data_in[36]" 46.7738
-cap "la_data_out[86]" "la_oenb[86]" 46.7738
-cap "wbs_dat_i[17]" "wbs_dat_o[17]" 46.7738
-cap "wbs_dat_o[5]" "wbs_dat_i[5]" 46.7738
-cap "io_in_3v3[22]" "gpio_noesd[15]" 67.2299
-cap "la_oenb[100]" "la_data_in[101]" 46.7738
-cap "la_data_out[32]" "la_data_in[32]" 46.7738
-cap "wbs_dat_o[1]" "wbs_sel_i[1]" 46.7738
-cap "io_analog[6]" "io_analog[6]" 21353.1
-cap "la_data_out[116]" "la_oenb[116]" 46.7738
-cap "la_oenb[104]" "la_data_in[105]" 46.7738
-cap "la_data_in[100]" "la_oenb[99]" 46.7738
-cap "la_data_in[28]" "la_data_out[28]" 46.7738
-cap "la_oenb[111]" "la_data_in[112]" 46.7738
-cap "wbs_adr_i[15]" "wbs_dat_o[14]" 46.7738
-cap "la_oenb[98]" "la_data_in[99]" 46.7738
-cap "la_data_out[66]" "la_oenb[66]" 46.7738
-cap "wbs_dat_o[26]" "wbs_dat_i[26]" 46.7738
-cap "wb_rst_i" "wb_clk_i" 46.7738
-cap "la_data_in[124]" "la_oenb[123]" 46.7738
-cap "io_in[0]" "io_out[0]" 67.2299
-cap "wbs_adr_i[13]" "wbs_dat_o[12]" 46.7738
-cap "la_data_in[102]" "la_data_out[102]" 46.7738
-cap "la_data_out[100]" "la_oenb[100]" 46.7738
-cap "la_oenb[53]" "la_data_in[54]" 46.7738
-cap "wbs_adr_i[30]" "wbs_dat_i[30]" 46.7738
-cap "m1_565562_311061#" "vccd1" 1115.76
-cap "gpio_noesd[16]" "gpio_analog[16]" 67.2299
-cap "wbs_adr_i[10]" "wbs_dat_o[9]" 46.7738
-cap "wbs_adr_i[5]" "wbs_dat_i[5]" 46.7738
-cap "io_in_3v3[24]" "io_in[24]" 67.2299
-cap "wbs_dat_i[8]" "wbs_dat_o[8]" 46.7738
-cap "io_in_3v3[16]" "io_in[16]" 67.2299
-cap "la_data_out[82]" "la_oenb[82]" 46.7738
-cap "la_data_in[46]" "la_oenb[45]" 46.7738
+cap "la_data_out[30]" "la_data_in[30]" 46.7738
 cap "io_out[25]" "io_oeb[25]" 67.2299
-cap "la_data_out[78]" "la_oenb[78]" 46.7738
-cap "la_data_out[38]" "la_oenb[38]" 46.7738
-cap "la_oenb[33]" "la_data_out[33]" 46.7738
-cap "la_data_out[12]" "la_oenb[12]" 46.7738
-cap "la_data_in[7]" "la_oenb[6]" 46.7738
-cap "la_data_out[6]" "la_data_in[6]" 46.7738
-cap "la_data_in[89]" "la_data_out[89]" 46.7738
-cap "la_data_in[73]" "la_data_out[73]" 46.7738
-cap "la_data_out[36]" "la_data_in[36]" 46.7738
-cap "la_data_out[117]" "la_oenb[117]" 46.7738
-cap "la_data_in[110]" "la_oenb[109]" 46.7738
-cap "la_data_out[98]" "la_oenb[98]" 46.7738
-cap "la_data_in[19]" "la_oenb[18]" 46.7738
-cap "la_data_out[3]" "la_data_in[3]" 46.7738
-cap "wbs_adr_i[25]" "wbs_dat_o[24]" 46.7738
-cap "io_out[18]" "io_oeb[18]" 67.2299
-cap "la_data_out[57]" "la_oenb[57]" 46.7738
-cap "la_data_out[5]" "la_oenb[5]" 46.7738
-cap "io_oeb[2]" "io_in_3v3[3]" 67.2299
-cap "la_data_out[16]" "la_data_in[16]" 46.7738
-cap "la_data_out[93]" "la_oenb[93]" 46.7738
-cap "la_data_out[113]" "la_oenb[113]" 46.7738
-cap "la_data_in[5]" "la_data_out[5]" 46.7738
-cap "la_data_in[122]" "la_data_out[122]" 46.7738
-cap "la_data_out[6]" "la_oenb[6]" 46.7738
-cap "io_out[5]" "io_in[5]" 67.2299
-cap "la_data_out[4]" "la_oenb[4]" 46.7738
-cap "wbs_dat_i[24]" "wbs_adr_i[24]" 46.7738
-cap "io_in_3v3[22]" "io_in[22]" 67.2299
-cap "io_in_3v3[20]" "io_in[20]" 67.2299
-cap "vssa1" "gpio_analog[5]" 5623.72
-cap "la_data_in[98]" "la_oenb[97]" 46.7738
-cap "la_oenb[34]" "la_data_in[35]" 46.7738
-cap "la_oenb[10]" "la_data_in[11]" 46.7738
-cap "la_data_in[70]" "la_oenb[69]" 46.7738
-cap "la_data_out[47]" "la_oenb[47]" 46.7738
-cap "la_data_out[36]" "la_oenb[36]" 46.7738
-cap "wbs_dat_o[28]" "wbs_dat_i[28]" 46.7738
-cap "la_oenb[105]" "la_data_in[106]" 46.7738
-cap "la_data_out[81]" "la_oenb[81]" 46.7738
-cap "wbs_dat_i[8]" "wbs_adr_i[8]" 46.7738
-cap "wbs_dat_i[1]" "wbs_adr_i[1]" 46.7738
-cap "io_in[26]" "io_out[26]" 67.2299
-cap "wbs_adr_i[10]" "wbs_dat_i[10]" 46.7738
-cap "la_data_out[120]" "la_oenb[120]" 46.7738
-cap "la_data_out[104]" "la_oenb[104]" 46.7738
-cap "la_data_in[96]" "la_oenb[95]" 46.7738
-cap "la_data_in[84]" "la_data_out[84]" 46.7738
-cap "io_in_3v3[15]" "io_in[15]" 67.2299
-cap "io_analog[4]" "io_clamp_high[0]" 468.333
-cap "la_data_in[50]" "la_data_out[50]" 46.7738
-cap "wbs_dat_o[1]" "wbs_dat_i[1]" 46.7738
-cap "wbs_cyc_i" "wbs_ack_o" 46.7738
-cap "gpio_analog[3]" "vccd1" 2596.5
-cap "io_out[6]" "io_in[6]" 67.2299
-cap "la_data_out[119]" "la_oenb[119]" 46.7738
-cap "la_data_in[60]" "la_data_out[60]" 46.7738
-cap "la_data_in[2]" "la_oenb[1]" 46.7738
-cap "la_data_in[97]" "la_data_out[97]" 46.7738
-cap "la_data_in[38]" "la_oenb[37]" 46.7738
-cap "io_in[21]" "io_out[21]" 67.2299
-cap "la_data_out[13]" "la_data_in[13]" 46.7738
-cap "wbs_adr_i[0]" "wbs_dat_i[0]" 46.7738
-cap "gpio_noesd[12]" "gpio_analog[12]" 67.2299
-cap "la_data_in[51]" "la_data_out[51]" 46.7738
-cap "la_data_in[86]" "la_data_out[86]" 46.7738
-cap "wbs_dat_o[20]" "wbs_dat_i[20]" 46.7738
-cap "la_data_out[108]" "la_oenb[108]" 46.7738
-cap "la_data_out[71]" "la_oenb[71]" 46.7738
-cap "io_analog[6]" "io_analog[6]" 21353.1
-cap "io_in[7]" "io_in_3v3[7]" 67.2299
-cap "la_data_in[116]" "la_data_out[116]" 46.7738
-cap "la_data_in[39]" "la_oenb[38]" 46.7738
-cap "la_data_in[24]" "la_oenb[23]" 46.7738
-cap "wbs_adr_i[27]" "wbs_dat_i[27]" 46.7738
-cap "la_data_out[63]" "la_oenb[63]" 46.7738
-cap "la_data_in[55]" "la_oenb[54]" 46.7738
-cap "la_data_out[11]" "la_data_in[11]" 46.7738
-cap "la_data_in[76]" "la_oenb[75]" 46.7738
-cap "la_oenb[74]" "la_data_in[75]" 46.7738
-cap "io_in[10]" "io_in_3v3[10]" 67.2299
-cap "io_oeb[10]" "io_out[10]" 67.2299
-cap "gpio_noesd[8]" "gpio_analog[8]" 67.2299
-cap "la_data_in[66]" "la_data_out[66]" 46.7738
-cap "gpio_noesd[4]" "gpio_analog[4]" 67.2299
-cap "la_oenb[66]" "la_data_in[67]" 46.7738
-cap "gpio_analog[3]" "gpio_noesd[3]" 67.2479
-cap "la_data_out[67]" "la_oenb[67]" 46.7738
-cap "la_data_in[14]" "la_oenb[13]" 46.7738
-cap "la_data_in[100]" "la_data_out[100]" 46.7738
-cap "la_data_out[40]" "la_data_in[40]" 46.7738
-cap "la_data_out[28]" "la_oenb[28]" 46.7738
-cap "la_data_in[1]" "la_oenb[0]" 46.7738
-cap "la_data_out[62]" "la_oenb[62]" 46.7738
-cap "la_oenb[15]" "la_data_in[16]" 46.7738
-cap "io_out[8]" "io_in[8]" 67.2299
+cap "io_in[24]" "io_in_3v3[24]" 67.2299
+cap "la_oenb[90]" "la_data_out[90]" 46.7738
+cap "vccd1" "m1_565562_311061#" 1038.03
+cap "io_in_3v3[1]" "io_in[1]" 67.2299
+cap "gpio_noesd[9]" "gpio_analog[9]" 67.2299
+cap "gpio_noesd[7]" "io_in_3v3[14]" 67.2299
+cap "io_analog[6]" "io_clamp_high[2]" 468.333
+cap "la_data_in[82]" "la_oenb[81]" 46.7738
+cap "wbs_adr_i[5]" "wbs_dat_i[5]" 46.7738
 cap "gpio_noesd[9]" "io_in_3v3[16]" 67.2299
-cap "io_clamp_low[1]" "io_analog[5]" 468.333
-cap "la_data_in[82]" "la_data_out[82]" 46.7738
-cap "wbs_adr_i[26]" "wbs_dat_i[26]" 46.7738
-cap "la_oenb[35]" "la_data_out[35]" 46.7738
-cap "la_data_in[78]" "la_data_out[78]" 46.7738
-cap "la_data_out[70]" "la_oenb[70]" 46.7738
-cap "la_data_out[18]" "la_data_in[18]" 46.7738
+cap "io_out[11]" "io_in[11]" 67.2299
+cap "la_data_out[73]" "la_data_in[73]" 46.7738
+cap "la_oenb[21]" "la_data_out[21]" 46.7738
+cap "la_data_in[1]" "la_data_out[1]" 46.7738
+cap "wbs_dat_i[28]" "wbs_dat_o[28]" 46.7738
+cap "wbs_adr_i[3]" "wbs_dat_i[3]" 46.7738
+cap "io_out[14]" "io_oeb[14]" 67.2299
+cap "la_data_out[50]" "la_oenb[50]" 46.7738
+cap "la_data_in[104]" "la_oenb[103]" 46.7738
+cap "la_oenb[28]" "la_data_out[28]" 46.7738
+cap "wbs_dat_i[6]" "wbs_dat_o[6]" 46.7738
+cap "user_clock2" "la_oenb[127]" 46.7738
+cap "wbs_dat_i[20]" "wbs_adr_i[20]" 46.7738
+cap "wbs_adr_i[0]" "wbs_we_i" 46.7738
+cap "gpio_analog[1]" "gpio_noesd[1]" 67.4032
+cap "la_data_in[45]" "la_oenb[44]" 46.7738
+cap "gpio_analog[5]" "vssa1" 277959
+cap "la_data_out[123]" "la_data_in[123]" 46.7738
+cap "la_oenb[105]" "la_data_in[106]" 46.7738
+cap "la_data_out[89]" "la_data_in[89]" 46.7738
+cap "wbs_adr_i[23]" "wbs_dat_i[23]" 46.7738
+cap "wbs_dat_o[7]" "wbs_dat_i[7]" 46.7738
+cap "la_oenb[80]" "la_data_out[80]" 46.7738
+cap "la_data_in[23]" "la_oenb[22]" 46.7738
+cap "la_oenb[8]" "la_data_in[9]" 46.7738
+cap "vccd1" "gpio_analog[3]" 2596.5
+cap "io_in[10]" "io_in_3v3[10]" 67.2299
+cap "la_data_in[71]" "la_oenb[70]" 46.7738
+cap "la_data_in[4]" "la_data_out[4]" 46.7738
+cap "io_clamp_high[0]" "io_clamp_low[0]" 468.333
+cap "la_data_in[64]" "la_oenb[63]" 46.7738
+cap "io_in_3v3[15]" "gpio_noesd[8]" 67.2299
+cap "la_data_out[71]" "la_oenb[71]" 46.7738
+cap "la_data_out[19]" "la_data_in[19]" 46.7738
+cap "gpio_noesd[0]" "gpio_analog[0]" 67.2299
+cap "la_oenb[59]" "la_data_out[59]" 46.7738
+cap "la_data_out[49]" "la_data_in[49]" 46.7738
+cap "la_data_out[13]" "la_oenb[13]" 46.7738
+cap "user_irq[0]" "user_irq[1]" 46.7738
+cap "la_data_out[45]" "la_oenb[45]" 46.7738
+cap "la_data_out[40]" "la_oenb[40]" 46.7738
+cap "la_data_in[39]" "la_oenb[38]" 46.7738
+cap "wbs_dat_o[4]" "wbs_dat_i[4]" 46.7738
+cap "la_oenb[125]" "la_data_in[126]" 46.7738
+cap "la_data_out[26]" "la_data_in[26]" 46.7738
+cap "io_oeb[17]" "io_out[17]" 67.2299
+cap "la_data_in[88]" "la_oenb[87]" 46.7738
+cap "la_data_out[79]" "la_data_in[79]" 46.7738
+cap "wbs_dat_o[24]" "wbs_adr_i[25]" 46.7738
+cap "io_analog[4]" "io_analog[4]" 26259.4
+cap "io_clamp_low[1]" "io_clamp_high[1]" 468.333
+cap "la_oenb[48]" "la_data_in[49]" 46.7738
 cap "la_data_out[107]" "la_oenb[107]" 46.7738
+cap "la_oenb[11]" "la_data_in[12]" 46.7738
+cap "io_oeb[24]" "io_out[24]" 67.2299
+cap "io_analog[4]" "io_analog[4]" 26259.4
+cap "la_data_out[104]" "la_oenb[104]" 46.7738
+cap "wbs_dat_i[18]" "wbs_adr_i[18]" 46.7738
+cap "wbs_dat_o[12]" "wbs_adr_i[13]" 46.7738
+cap "la_data_out[122]" "la_data_in[122]" 46.7738
+cap "la_data_out[92]" "la_oenb[92]" 46.7738
+cap "vccd1" "m1_565820_447081#" 1015.73
+cap "gpio_noesd[15]" "io_in_3v3[22]" 67.2299
+cap "m1_565792_357004#" "gpio_analog[2]" 20.3669
+cap "io_out[7]" "io_oeb[7]" 67.2299
+cap "la_data_in[101]" "la_data_out[101]" 46.7738
+cap "la_oenb[86]" "la_data_out[86]" 46.7738
+cap "la_data_out[22]" "la_oenb[22]" 46.7738
+cap "la_data_out[0]" "la_oenb[0]" 46.7738
+cap "wbs_dat_i[11]" "wbs_adr_i[11]" 46.7738
+cap "io_in[19]" "io_in_3v3[19]" 67.2299
+cap "la_data_out[53]" "la_data_in[53]" 46.7738
+cap "wbs_dat_o[27]" "wbs_adr_i[28]" 46.7738
+cap "la_data_out[109]" "la_oenb[109]" 46.7738
+cap "la_data_out[101]" "la_oenb[101]" 46.7738
+cap "la_data_in[60]" "la_oenb[59]" 46.7738
+cap "wbs_dat_i[17]" "wbs_dat_o[17]" 46.7738
+cap "wbs_adr_i[13]" "wbs_dat_i[13]" 46.7738
+cap "io_out[19]" "io_in[19]" 67.2299
+cap "wbs_dat_o[5]" "wbs_dat_i[5]" 46.7738
+cap "la_data_out[96]" "la_data_in[96]" 46.7738
+cap "la_data_out[35]" "la_data_in[35]" 46.7738
+cap "io_out[17]" "io_in[17]" 67.2299
+cap "la_oenb[117]" "la_data_in[118]" 46.7738
+cap "la_oenb[103]" "la_data_out[103]" 46.7738
+cap "la_data_in[101]" "la_oenb[100]" 46.7738
+cap "la_oenb[77]" "la_data_out[77]" 46.7738
+cap "la_oenb[70]" "la_data_out[70]" 46.7738
+cap "la_data_out[65]" "la_data_in[65]" 46.7738
+cap "io_out[3]" "io_in[3]" 67.2299
+cap "la_data_in[15]" "la_oenb[14]" 46.7738
+cap "la_data_in[8]" "la_data_out[8]" 46.7738
+cap "io_analog[6]" "io_analog[6]" 21353.1
+cap "io_in[25]" "io_in_3v3[25]" 67.2299
+cap "io_in[21]" "io_out[21]" 67.2299
+cap "la_data_in[111]" "la_oenb[110]" 46.7738
+cap "la_data_out[3]" "la_oenb[3]" 46.7738
+cap "wbs_stb_i" "wbs_we_i" 46.7738
+cap "la_data_out[104]" "la_data_in[104]" 46.7738
+cap "la_data_out[34]" "la_data_in[34]" 46.7738
+cap "wbs_sel_i[2]" "wbs_dat_o[2]" 46.7738
+cap "io_in[26]" "io_in_3v3[26]" 67.2299
+cap "la_oenb[56]" "la_data_in[57]" 46.7738
+cap "wbs_adr_i[3]" "wbs_sel_i[2]" 46.7738
+cap "wbs_dat_i[1]" "wbs_dat_o[1]" 46.7738
+cap "la_data_in[66]" "la_data_out[66]" 46.7738
+cap "la_data_out[63]" "la_data_in[63]" 46.7738
+cap "la_data_out[42]" "la_data_in[42]" 46.7738
+cap "io_in[0]" "io_out[0]" 67.2299
+cap "io_analog[5]" "io_analog[5]" 21353.1
+cap "io_in_3v3[4]" "io_oeb[3]" 67.2299
+cap "la_data_in[85]" "la_oenb[84]" 46.7738
+cap "la_data_out[76]" "la_data_in[76]" 46.7738
+cap "la_oenb[39]" "la_data_in[40]" 46.7738
+cap "la_oenb[25]" "la_data_out[25]" 46.7738
+cap "la_data_in[58]" "la_oenb[57]" 46.7738
+cap "gpio_noesd[1]" "io_in_3v3[8]" 67.2299
+cap "la_data_in[115]" "la_data_out[115]" 46.7738
+cap "la_data_out[17]" "la_oenb[17]" 46.7738
+cap "la_data_in[11]" "la_data_out[11]" 46.7738
+cap "wbs_dat_o[14]" "wbs_dat_i[14]" 46.7738
+cap "io_oeb[16]" "io_out[16]" 67.2299
+cap "wbs_ack_o" "wb_rst_i" 46.7738
+cap "wbs_cyc_i" "wbs_stb_i" 46.7738
+cap "la_oenb[106]" "la_data_in[107]" 46.7738
+cap "gpio_noesd[4]" "io_in_3v3[11]" 67.2299
+cap "io_oeb[24]" "io_in_3v3[25]" 67.2299
+cap "la_data_in[43]" "la_oenb[42]" 46.7738
+cap "wbs_dat_o[8]" "wbs_dat_i[8]" 46.7738
+cap "io_analog[4]" "io_analog[4]" 21353.1
+cap "io_out[5]" "io_oeb[5]" 67.2299
+cap "la_oenb[122]" "la_data_out[122]" 46.7738
+cap "la_data_in[97]" "la_data_out[97]" 46.7738
+cap "la_oenb[83]" "la_data_out[83]" 46.7738
+cap "la_data_in[61]" "la_data_out[61]" 46.7738
+cap "la_data_out[30]" "la_oenb[30]" 46.7738
+cap "la_data_in[75]" "la_oenb[74]" 46.7738
+cap "wbs_dat_o[31]" "la_data_in[0]" 46.7738
+cap "wbs_sel_i[0]" "wbs_adr_i[1]" 46.7738
+cap "io_analog[6]" "io_analog[6]" 26259.4
+cap "la_oenb[91]" "la_data_in[92]" 46.7738
+cap "la_data_in[17]" "la_oenb[16]" 46.7738
+cap "wbs_adr_i[27]" "wbs_dat_i[27]" 46.7738
+cap "wbs_adr_i[11]" "wbs_dat_o[10]" 46.7738
+cap "wbs_dat_o[0]" "wbs_sel_i[0]" 46.7738
+cap "la_data_out[65]" "la_oenb[65]" 46.7738
+cap "la_data_out[39]" "la_data_in[39]" 46.7738
+cap "wbs_adr_i[22]" "wbs_dat_o[21]" 46.7738
+cap "la_data_out[46]" "la_oenb[46]" 46.7738
+cap "m1_565574_507424#" "gpio_analog[5]" 156.182
+cap "la_data_out[44]" "la_oenb[44]" 46.7738
+cap "la_oenb[30]" "la_data_in[31]" 46.7738
+cap "wbs_dat_i[15]" "wbs_adr_i[15]" 46.7738
+cap "io_out[23]" "io_in[23]" 67.2299
+cap "io_in_3v3[10]" "gpio_noesd[3]" 67.2299
+cap "la_data_in[91]" "la_oenb[90]" 46.7738
+cap "la_data_in[22]" "la_data_out[22]" 46.7738
+cap "wbs_dat_o[23]" "wbs_adr_i[24]" 46.7738
+cap "wbs_adr_i[22]" "wbs_dat_i[22]" 46.7738
+cap "io_out[2]" "io_oeb[2]" 67.2299
+cap "la_data_out[115]" "la_oenb[115]" 46.7738
+cap "la_data_out[82]" "la_data_in[82]" 46.7738
+cap "la_oenb[73]" "la_data_out[73]" 46.7738
+cap "la_data_out[48]" "la_data_in[48]" 46.7738
+cap "la_data_out[7]" "la_oenb[7]" 46.7738
+cap "io_in_3v3[21]" "gpio_noesd[14]" 67.2299
+cap "gpio_noesd[10]" "gpio_analog[10]" 67.2299
+cap "la_oenb[69]" "la_data_out[69]" 46.7738
+cap "la_oenb[47]" "la_data_in[48]" 46.7738
+cap "la_data_in[21]" "la_data_out[21]" 46.7738
+cap "la_oenb[2]" "la_data_in[3]" 46.7738
+cap "la_data_out[27]" "la_data_in[27]" 46.7738
+cap "wbs_adr_i[30]" "wbs_dat_i[30]" 46.7738
+cap "la_data_out[103]" "la_data_in[103]" 46.7738
+cap "la_data_in[61]" "la_oenb[60]" 46.7738
+cap "la_oenb[32]" "la_data_in[33]" 46.7738
+cap "la_data_out[31]" "la_oenb[31]" 46.7738
+cap "la_oenb[29]" "la_data_in[30]" 46.7738
+cap "la_data_in[122]" "la_oenb[121]" 46.7738
+cap "la_data_out[38]" "la_data_in[38]" 46.7738
+cap "la_data_out[100]" "la_data_in[100]" 46.7738
+cap "la_oenb[108]" "la_data_in[109]" 46.7738
+cap "la_data_in[108]" "la_oenb[107]" 46.7738
+cap "la_data_out[57]" "la_oenb[57]" 46.7738
+cap "la_oenb[89]" "la_data_out[89]" 46.7738
+cap "la_data_in[81]" "la_oenb[80]" 46.7738
+cap "la_data_out[10]" "la_oenb[10]" 46.7738
+cap "wbs_dat_o[18]" "wbs_adr_i[19]" 46.7738
+cap "wbs_dat_o[15]" "wbs_adr_i[16]" 46.7738
+cap "wbs_dat_o[19]" "wbs_adr_i[20]" 46.7738
+cap "la_oenb[37]" "la_data_in[38]" 46.7738
+cap "gpio_noesd[8]" "gpio_analog[8]" 67.2299
+cap "la_oenb[114]" "la_data_out[114]" 46.7738
+cap "la_oenb[40]" "la_data_in[41]" 46.7738
+cap "wbs_adr_i[8]" "wbs_dat_i[8]" 46.7738
+cap "gpio_analog[1]" "vssa1" 6549
+cap "io_in[22]" "io_out[22]" 67.2299
+cap "la_data_out[48]" "la_oenb[48]" 46.7738
+cap "wbs_dat_o[19]" "wbs_dat_i[19]" 46.7738
+cap "la_data_out[68]" "la_data_in[68]" 46.7738
+cap "io_in_3v3[3]" "io_in[3]" 67.2299
+cap "la_data_out[88]" "la_data_in[88]" 46.7738
+cap "la_oenb[18]" "la_data_out[18]" 46.7738
+cap "la_data_out[18]" "la_data_in[18]" 46.7738
+cap "wbs_dat_i[24]" "wbs_dat_o[24]" 46.7738
+cap "io_out[23]" "io_oeb[23]" 67.2299
+cap "la_oenb[79]" "la_data_out[79]" 46.7738
+cap "wbs_dat_i[26]" "wbs_dat_o[26]" 46.7738
+cap "user_clock2" "user_irq[0]" 46.7738
+cap "la_data_out[16]" "la_data_in[16]" 46.7738
+cap "io_out[25]" "io_in[25]" 67.2299
+cap "wbs_adr_i[6]" "wbs_dat_i[6]" 46.7738
+cap "io_oeb[0]" "io_out[0]" 67.2299
+cap "la_oenb[28]" "la_data_in[29]" 46.7738
+cap "la_data_out[96]" "la_oenb[96]" 46.7738
+cap "io_analog[4]" "io_clamp_low[0]" 468.333
+cap "la_data_out[51]" "la_oenb[51]" 46.7738
+cap "la_data_out[40]" "la_data_in[40]" 46.7738
+cap "vssa1" "gpio_analog[2]" 5509.89
+cap "la_data_in[36]" "la_data_out[36]" 46.7738
+cap "la_oenb[6]" "la_data_in[7]" 46.7738
+cap "gpio_noesd[13]" "io_in_3v3[20]" 67.2299
+cap "la_oenb[110]" "la_data_out[110]" 46.7738
+cap "la_data_in[87]" "la_oenb[86]" 46.7738
+cap "la_data_out[33]" "la_oenb[33]" 46.7738
+cap "la_data_in[2]" "la_data_out[2]" 46.7738
+cap "io_in[24]" "io_out[24]" 67.2299
+cap "la_data_out[61]" "la_oenb[61]" 46.7738
+cap "la_data_out[46]" "la_data_in[46]" 46.7738
+cap "wbs_dat_i[29]" "wbs_dat_o[29]" 46.7738
+cap "la_data_out[114]" "la_data_in[114]" 46.7738
+cap "la_data_in[6]" "la_oenb[5]" 46.7738
+cap "la_data_in[125]" "la_oenb[124]" 46.7738
+cap "la_oenb[122]" "la_data_in[123]" 46.7738
+cap "la_data_in[69]" "la_oenb[68]" 46.7738
+cap "la_data_in[52]" "la_oenb[51]" 46.7738
+cap "wbs_dat_i[2]" "wbs_dat_o[2]" 46.7738
+cap "io_in[18]" "io_in_3v3[18]" 67.2299
+cap "la_data_out[106]" "la_oenb[106]" 46.7738
+cap "la_oenb[24]" "la_data_out[24]" 46.7738
+cap "vccd1" "m1_565792_357004#" 1030.61
+cap "la_oenb[62]" "la_data_out[62]" 46.7738
+cap "wbs_dat_o[20]" "wbs_adr_i[21]" 46.7738
+cap "io_in[5]" "io_out[5]" 67.2299
+cap "la_oenb[99]" "la_data_out[99]" 46.7738
+cap "wbs_adr_i[10]" "wbs_dat_i[10]" 46.7738
+cap "io_in_3v3[19]" "gpio_noesd[12]" 67.2299
+cap "io_clamp_low[2]" "io_analog[6]" 468.333
+cap "la_data_out[124]" "la_data_in[124]" 46.7738
+cap "la_data_in[78]" "la_oenb[77]" 46.7738
+cap "io_in_3v3[6]" "io_in[6]" 67.2299
+cap "la_data_out[70]" "la_data_in[70]" 46.7738
+cap "la_data_out[67]" "la_data_in[67]" 46.7738
+cap "la_data_in[64]" "la_data_out[64]" 46.7738
+cap "la_oenb[85]" "la_data_out[85]" 46.7738
+cap "la_oenb[64]" "la_data_out[64]" 46.7738
+cap "la_oenb[15]" "la_data_in[16]" 46.7738
+cap "la_oenb[9]" "la_data_in[10]" 46.7738
+cap "gpio_analog[6]" "gpio_noesd[6]" 67.2299
+cap "la_data_in[58]" "la_data_out[58]" 46.7738
+cap "la_data_in[5]" "la_data_out[5]" 46.7738
+cap "wbs_adr_i[2]" "wbs_dat_i[2]" 46.7738
+cap "io_in[2]" "io_out[2]" 67.2299
+cap "la_oenb[114]" "la_data_in[115]" 46.7738
+cap "la_oenb[97]" "la_data_out[97]" 46.7738
+cap "la_data_in[12]" "la_data_out[12]" 46.7738
+cap "io_out[4]" "io_oeb[4]" 67.2299
+cap "la_data_out[116]" "la_oenb[116]" 46.7738
+cap "wbs_dat_i[18]" "wbs_dat_o[18]" 46.7738
+cap "vccd1" "m1_565822_581106#" 1156.12
+cap "io_in[16]" "io_out[16]" 67.2299
+cap "la_data_out[55]" "la_oenb[55]" 46.7738
+cap "la_data_in[15]" "la_data_out[15]" 46.7738
+cap "la_oenb[76]" "la_data_out[76]" 46.7738
+cap "la_data_out[47]" "la_data_in[47]" 46.7738
+cap "la_oenb[113]" "la_data_in[114]" 46.7738
+cap "la_data_out[100]" "la_oenb[100]" 46.7738
+cap "wbs_dat_o[25]" "wbs_adr_i[26]" 46.7738
+cap "io_in_3v3[11]" "io_in[11]" 67.2299
+cap "wbs_dat_o[1]" "wbs_sel_i[1]" 46.7738
+cap "la_data_in[32]" "la_oenb[31]" 46.7738
+cap "io_in_3v3[26]" "io_oeb[25]" 67.2299
+cap "gpio_noesd[11]" "gpio_analog[11]" 67.2299
+cap "la_data_in[14]" "la_oenb[13]" 46.7738
+cap "wbs_adr_i[4]" "wbs_sel_i[3]" 46.7738
+cap "la_data_out[56]" "la_oenb[56]" 46.7738
+cap "la_data_out[25]" "la_data_in[25]" 46.7738
+cap "wbs_dat_o[22]" "wbs_adr_i[23]" 46.7738
+cap "gpio_noesd[12]" "gpio_analog[12]" 67.2299
+cap "la_data_out[56]" "la_data_in[56]" 46.7738
+cap "la_data_in[44]" "la_oenb[43]" 46.7738
+cap "io_in_3v3[23]" "io_in[23]" 67.2299
+cap "io_in[6]" "io_out[6]" 67.2299
+cap "la_oenb[69]" "la_data_in[70]" 46.7738
+cap "la_data_out[124]" "la_oenb[124]" 46.7738
+cap "la_data_out[125]" "la_data_in[125]" 46.7738
+cap "la_oenb[104]" "la_data_in[105]" 46.7738
+cap "la_oenb[95]" "la_data_in[96]" 46.7738
+cap "la_data_in[84]" "la_oenb[83]" 46.7738
+cap "wbs_dat_i[17]" "wbs_adr_i[17]" 46.7738
+cap "la_data_out[75]" "la_data_in[75]" 46.7738
+cap "la_data_in[6]" "la_data_out[6]" 46.7738
+cap "la_data_out[1]" "la_oenb[1]" 46.7738
+cap "io_out[15]" "io_in[15]" 67.2299
+cap "wbs_dat_o[28]" "wbs_adr_i[29]" 46.7738
+cap "la_data_out[107]" "la_data_in[107]" 46.7738
+cap "la_oenb[45]" "la_data_in[46]" 46.7738
+cap "io_in_3v3[21]" "io_in[21]" 67.2299
+cap "la_oenb[27]" "la_data_out[27]" 46.7738
+cap "vccd1" "gpio_analog[6]" 17181.1
+cap "io_out[8]" "io_oeb[8]" 67.2299
+cap "la_oenb[78]" "la_data_in[79]" 46.7738
+cap "la_data_out[41]" "la_data_in[41]" 46.7738
+cap "io_in[5]" "io_in_3v3[5]" 67.2299
+cap "gpio_analog[3]" "vssa1" 5404.22
+cap "la_data_out[32]" "la_data_in[32]" 46.7738
+cap "wbs_dat_o[11]" "wbs_adr_i[12]" 46.7738
+cap "gpio_analog[4]" "m1_565820_447081#" 7.15572
+cap "io_analog[4]" "io_clamp_high[0]" 468.333
+cap "la_oenb[67]" "la_data_out[67]" 46.7738
+cap "io_analog[6]" "io_analog[6]" 21353.1
+cap "la_data_out[108]" "la_oenb[108]" 46.7738
+cap "la_data_out[91]" "la_data_in[91]" 46.7738
+cap "wbs_dat_i[12]" "wbs_dat_o[12]" 46.7738
+cap "la_oenb[82]" "la_data_out[82]" 46.7738
+cap "io_in[13]" "io_out[13]" 67.2299
+cap "la_data_in[99]" "la_oenb[98]" 46.7738
+cap "la_data_in[74]" "la_oenb[73]" 46.7738
+cap "la_data_out[54]" "la_oenb[54]" 46.7738
+cap "la_oenb[36]" "la_data_in[37]" 46.7738
+cap "wbs_adr_i[18]" "wbs_dat_o[17]" 46.7738
+cap "io_in[10]" "io_out[10]" 67.2299
+cap "la_data_in[120]" "la_data_out[120]" 46.7738
+cap "la_data_in[44]" "la_data_out[44]" 46.7738
+cap "la_data_in[9]" "la_data_out[9]" 46.7738
+cap "la_data_out[4]" "la_oenb[4]" 46.7738
+cap "io_in_3v3[18]" "gpio_noesd[11]" 67.2299
+cap "la_data_in[66]" "la_oenb[65]" 46.7738
+cap "la_data_in[51]" "la_oenb[50]" 46.7738
+cap "wbs_dat_i[14]" "wbs_adr_i[14]" 46.7738
+cap "la_data_in[110]" "la_oenb[109]" 46.7738
+cap "io_in[17]" "io_in_3v3[17]" 67.2299
+cap "wbs_adr_i[21]" "wbs_dat_i[21]" 46.7738
+cap "la_data_in[119]" "la_oenb[118]" 46.7738
+cap "la_data_in[112]" "la_data_out[112]" 46.7738
+cap "la_data_out[57]" "la_data_in[57]" 46.7738
+cap "la_data_in[117]" "la_data_out[117]" 46.7738
+cap "la_data_in[90]" "la_oenb[89]" 46.7738
+cap "la_data_out[81]" "la_data_in[81]" 46.7738
+cap "la_data_in[67]" "la_oenb[66]" 46.7738
+cap "wbs_adr_i[25]" "wbs_dat_i[25]" 46.7738
+cap "la_data_out[121]" "la_oenb[121]" 46.7738
+cap "wbs_dat_i[21]" "wbs_dat_o[21]" 46.7738
+cap "la_oenb[99]" "la_data_in[100]" 46.7738
+cap "la_data_in[24]" "la_oenb[23]" 46.7738
+cap "la_oenb[43]" "la_data_out[43]" 46.7738
+cap "wbs_dat_i[23]" "wbs_dat_o[23]" 46.7738
+cap "io_oeb[11]" "io_out[11]" 67.2299
+cap "wbs_adr_i[4]" "wbs_dat_i[4]" 46.7738
+cap "la_data_in[112]" "la_oenb[111]" 46.7738
+cap "io_clamp_high[1]" "io_analog[5]" 468.333
+cap "la_data_in[95]" "la_oenb[94]" 46.7738
+cap "io_out[7]" "io_in[7]" 67.2299
+cap "la_data_in[24]" "la_data_out[24]" 46.7738
+cap "la_oenb[19]" "la_data_out[19]" 46.7738
+cap "io_in_3v3[8]" "io_in[8]" 67.2299
+cap "la_oenb[88]" "la_data_out[88]" 46.7738
+cap "la_oenb[41]" "la_data_in[42]" 46.7738
+cap "la_data_out[5]" "la_oenb[5]" 46.7738
+cap "la_data_out[118]" "la_data_in[118]" 46.7738
+cap "la_data_in[80]" "la_oenb[79]" 46.7738
+cap "la_data_out[72]" "la_data_in[72]" 46.7738
+cap "la_oenb[49]" "la_data_in[50]" 46.7738
+cap "la_data_in[20]" "la_oenb[19]" 46.7738
+cap "la_oenb[0]" "la_data_in[1]" 46.7738
+cap "wbs_adr_i[28]" "wbs_dat_i[28]" 46.7738
+cap "vccd1" "gpio_analog[4]" 3334.01
+cap "io_oeb[21]" "io_out[21]" 67.2299
+cap "la_data_in[103]" "la_oenb[102]" 46.7738
+cap "la_data_in[43]" "la_data_out[43]" 46.7738
+cap "gpio_analog[2]" "gpio_noesd[2]" 67.3454
+cap "la_oenb[26]" "la_data_in[27]" 46.7738
+cap "wbs_adr_i[19]" "wbs_dat_i[19]" 46.7738
+cap "la_oenb[72]" "la_data_out[72]" 46.7738
+cap "gpio_analog[17]" "gpio_noesd[17]" 67.2299
+cap "la_oenb[25]" "la_data_in[26]" 46.7738
+cap "io_in[22]" "io_in_3v3[22]" 67.2299
+cap "la_data_out[62]" "la_data_in[62]" 46.7738
+cap "la_data_out[13]" "la_data_in[13]" 46.7738
+cap "gpio_noesd[17]" "io_in_3v3[24]" 67.2299
+cap "gpio_analog[13]" "gpio_noesd[13]" 67.2299
+cap "la_data_in[97]" "la_oenb[96]" 46.7738
+cap "la_data_out[87]" "la_data_in[87]" 46.7738
+cap "io_analog[6]" "io_analog[6]" 26259.4
+cap "la_data_out[102]" "la_data_in[102]" 46.7738
+cap "la_data_out[8]" "la_oenb[8]" 46.7738
+cap "gpio_analog[3]" "m1_565664_402464#" 8.99904
+cap "io_in_3v3[15]" "io_in[15]" 67.2299
+cap "la_oenb[113]" "la_data_out[113]" 46.7738
+cap "la_data_out[95]" "la_oenb[95]" 46.7738
+cap "la_oenb[3]" "la_data_in[4]" 46.7738
+cap "io_oeb[10]" "io_out[10]" 67.2299
+cap "la_data_out[98]" "la_data_in[98]" 46.7738
+cap "io_in[9]" "io_in_3v3[9]" 67.2299
+cap "gpio_analog[3]" "gpio_noesd[3]" 67.2479
+cap "la_oenb[91]" "la_data_out[91]" 46.7738
+cap "la_data_out[94]" "la_data_in[94]" 46.7738
+cap "la_data_in[56]" "la_oenb[55]" 46.7738
+cap "vccd1" "gpio_analog[5]" 54850.4
+cap "io_out[9]" "io_in[9]" 67.2299
+cap "vccd1" "vssa1" 319590
+cap "la_oenb[112]" "la_data_out[112]" 46.7738
+cap "la_oenb[58]" "la_data_out[58]" 46.7738
+cap "io_out[12]" "io_oeb[12]" 67.2299
+cap "la_data_out[78]" "la_data_in[78]" 46.7738
+cap "wbs_dat_i[11]" "wbs_dat_o[11]" 46.7738
+cap "la_data_in[86]" "la_oenb[85]" 46.7738
+cap "io_out[15]" "io_oeb[15]" 67.2299
+cap "la_data_out[11]" "la_oenb[11]" 46.7738
+cap "la_oenb[112]" "la_data_in[113]" 46.7738
+cap "la_data_out[33]" "la_data_in[33]" 46.7738
+cap "la_data_out[26]" "la_oenb[26]" 46.7738
+cap "wbs_adr_i[7]" "wbs_dat_o[6]" 46.7738
+cap "io_out[12]" "io_in[12]" 67.2299
+cap "la_data_in[99]" "la_data_out[99]" 46.7738
+cap "la_data_in[95]" "la_data_out[95]" 46.7738
+cap "wbs_adr_i[5]" "wbs_dat_o[4]" 46.7738
+cap "la_data_out[127]" "la_data_in[127]" 46.7738
+cap "la_oenb[123]" "la_data_in[124]" 46.7738
+cap "la_data_in[77]" "la_oenb[76]" 46.7738
+cap "la_data_in[51]" "la_data_out[51]" 46.7738
+cap "wbs_dat_o[0]" "wbs_dat_i[0]" 46.7738
+cap "io_analog[5]" "io_analog[5]" 21353.1
+cap "la_data_in[55]" "la_oenb[54]" 46.7738
+cap "la_data_in[22]" "la_oenb[21]" 46.7738
+cap "la_data_in[0]" "la_data_out[0]" 46.7738
+cap "wb_clk_i" "wb_rst_i" 46.7738
+cap "wbs_dat_i[27]" "wbs_dat_o[27]" 46.7738
+cap "wbs_dat_i[9]" "wbs_adr_i[9]" 46.7738
+cap "wbs_dat_i[31]" "wbs_adr_i[31]" 46.7738
+cap "wbs_dat_o[9]" "wbs_dat_i[9]" 46.7738
+cap "gpio_noesd[15]" "gpio_analog[15]" 67.2299
+cap "io_in[16]" "io_in_3v3[16]" 67.2299
+cap "wbs_dat_o[5]" "wbs_adr_i[6]" 46.7738
+cap "la_data_out[45]" "la_data_in[45]" 46.7738
+cap "gpio_analog[6]" "m1_565822_581106#" 23.3188
+cap "la_data_in[69]" "la_data_out[69]" 46.7738
+cap "wbs_dat_o[3]" "wbs_sel_i[3]" 46.7738
+cap "io_out[13]" "io_oeb[13]" 67.2299
+cap "la_data_out[126]" "la_data_in[126]" 46.7738
+cap "la_data_out[84]" "la_data_in[84]" 46.7738
+cap "la_oenb[75]" "la_data_out[75]" 46.7738
+cap "wbs_sel_i[1]" "wbs_adr_i[2]" 46.7738
+cap "gpio_analog[1]" "m1_565562_311061#" 28.1328
+cap "la_data_in[113]" "la_data_out[113]" 46.7738
+cap "la_oenb[7]" "la_data_in[8]" 46.7738
+cap "la_data_out[28]" "la_data_in[28]" 46.7738
+cap "la_data_in[3]" "la_data_out[3]" 46.7738
+cap "la_data_out[29]" "la_oenb[29]" 46.7738
+cap "wbs_dat_i[30]" "wbs_dat_o[30]" 46.7738
+cap "wbs_dat_o[22]" "wbs_dat_i[22]" 46.7738
+cap "gpio_noesd[16]" "io_in_3v3[23]" 67.2299
+cap "io_analog[4]" "io_analog[4]" 21353.1
+cap "gpio_noesd[7]" "gpio_analog[7]" 67.2299
+cap "la_oenb[119]" "la_data_out[119]" 46.7738
+cap "la_data_out[38]" "la_oenb[38]" 46.7738
+cap "wbs_dat_o[20]" "wbs_dat_i[20]" 46.7738
+cap "la_oenb[93]" "la_data_out[93]" 46.7738
+cap "la_data_out[68]" "la_oenb[68]" 46.7738
+cap "la_data_in[83]" "la_oenb[82]" 46.7738
+cap "la_oenb[27]" "la_data_in[28]" 46.7738
+cap "wbs_adr_i[9]" "wbs_dat_o[8]" 46.7738
+cap "wbs_ack_o" "wbs_cyc_i" 46.7738
+cap "la_data_out[74]" "la_data_in[74]" 46.7738
+cap "la_data_in[37]" "la_data_out[37]" 46.7738
+cap "io_out[19]" "io_oeb[19]" 67.2299
+cap "la_data_in[62]" "la_oenb[61]" 46.7738
+cap "la_oenb[10]" "la_data_in[11]" 46.7738
+cap "vccd1" "m1_565664_402464#" 1163.35
+cap "io_oeb[20]" "io_out[20]" 67.2299
+cap "io_in[7]" "io_in_3v3[7]" 67.2299
+cap "io_in_3v3[13]" "io_in[13]" 67.2299
+cap "la_oenb[60]" "la_data_out[60]" 46.7738
+cap "la_data_in[53]" "la_oenb[52]" 46.7738
+cap "la_data_out[23]" "la_data_in[23]" 46.7738
+cap "io_oeb[18]" "io_out[18]" 67.2299
+cap "wbs_dat_o[14]" "wbs_adr_i[15]" 46.7738
+cap "la_data_in[17]" "la_data_out[17]" 46.7738
+cap "la_data_out[120]" "la_oenb[120]" 46.7738
+cap "la_data_out[98]" "la_oenb[98]" 46.7738
+cap "la_data_out[90]" "la_data_in[90]" 46.7738
+cap "wbs_adr_i[17]" "wbs_dat_o[16]" 46.7738
+cap "la_oenb[81]" "la_data_out[81]" 46.7738
+cap "la_data_in[65]" "la_oenb[64]" 46.7738
+cap "la_data_out[35]" "la_oenb[35]" 46.7738
+cap "wbs_dat_i[31]" "wbs_dat_o[31]" 46.7738
+cap "la_data_out[94]" "la_oenb[94]" 46.7738
+cap "la_data_in[73]" "la_oenb[72]" 46.7738
+cap "wbs_dat_o[26]" "wbs_adr_i[27]" 46.7738
+cap "la_data_in[119]" "la_data_out[119]" 46.7738
+cap "la_data_out[63]" "la_oenb[63]" 46.7738
+cap "io_in_3v3[13]" "gpio_noesd[6]" 67.2299
+cap "wbs_dat_i[16]" "wbs_adr_i[16]" 46.7738
+cap "io_out[1]" "io_in[1]" 67.2299
+cap "la_data_in[85]" "la_data_out[85]" 46.7738
+cap "la_data_out[23]" "la_oenb[23]" 46.7738
+cap "wbs_dat_o[13]" "wbs_dat_i[13]" 46.7738
+cap "io_out[8]" "io_in[8]" 67.2299
+cap "la_data_out[14]" "la_oenb[14]" 46.7738
+cap "wbs_dat_o[13]" "wbs_adr_i[14]" 46.7738
+cap "la_oenb[126]" "la_data_in[127]" 46.7738
+cap "la_oenb[53]" "la_data_in[54]" 46.7738
+cap "la_data_out[42]" "la_oenb[42]" 46.7738
+cap "io_clamp_low[2]" "io_clamp_high[2]" 468.333
+cap "la_data_in[60]" "la_data_out[60]" 46.7738
+cap "la_data_in[14]" "la_data_out[14]" 46.7738
+cap "la_data_in[89]" "la_oenb[88]" 46.7738
+cap "la_data_out[80]" "la_data_in[80]" 46.7738
+cap "la_data_out[52]" "la_data_in[52]" 46.7738
+cap "la_data_in[7]" "la_data_out[7]" 46.7738
+cap "la_data_out[34]" "la_oenb[34]" 46.7738
+cap "la_data_out[2]" "la_oenb[2]" 46.7738
+cap "wbs_adr_i[7]" "wbs_dat_i[7]" 46.7738
+cap "io_in[4]" "io_out[4]" 67.2299
+cap "la_oenb[117]" "la_data_out[117]" 46.7738
+cap "wbs_dat_o[29]" "wbs_adr_i[30]" 46.7738
+cap "vccd1" "m1_565574_507424#" 1166.99
+cap "la_data_out[110]" "la_data_in[110]" 46.7738
+cap "la_data_in[105]" "la_data_out[105]" 46.7738
+cap "io_in_3v3[3]" "io_oeb[2]" 67.2299
+cap "la_oenb[41]" "la_data_out[41]" 46.7738
+cap "io_out[6]" "io_oeb[6]" 67.2299
+cap "la_oenb[118]" "la_data_out[118]" 46.7738
+cap "la_oenb[35]" "la_data_in[36]" 46.7738
+cap "la_data_out[39]" "la_oenb[39]" 46.7738
+cap "la_data_out[36]" "la_oenb[36]" 46.7738
+cap "la_data_in[31]" "la_data_out[31]" 46.7738
+cap "la_oenb[87]" "la_data_out[87]" 46.7738
+cap "la_data_in[116]" "la_data_out[116]" 46.7738
+cap "la_data_in[93]" "la_oenb[92]" 46.7738
+cap "la_oenb[37]" "la_data_out[37]" 46.7738
 cap "la_data_in[10]" "la_data_out[10]" 46.7738
-cap "wbs_dat_o[2]" "wbs_sel_i[2]" 46.7738
-cap "nmos_flat_0/GATE" "nmos_flat_0/DRAIN" -7.10543e-14
-cap "nmos_flat_0/DRAIN" "nmos_flat_0/VGND" 10.8428
-cap "vccd1" "nmos_flat_0/VGND" -1.04625
-cap "nmos_flat_0/DRAIN" "nmos_flat_0/VGND" 0.00730822
-cap "pmos_flat_4/VGND" "pmos_flat_4/GATE" -0.0790492
-cap "pmos_flat_4/GATE" "pmos_flat_4/VGND" 11.3199
-cap "nmos_flat_0/GATE" "nmos_flat_0/DRAIN" -1.42109e-14
-cap "nmos_flat_0/GATE" "nmos_flat_0/a_2551_n500#" -5.86198e-14
-cap "nmos_flat_0/GATE" "nmos_flat_0/DRAIN" -3.41061e-13
-cap "nmos_flat_0/DRAIN" "nmos_flat_0/GATE" 84.6212
-cap "nmos_flat_0/DRAIN" "nmos_flat_0/VGND" 10.8428
-cap "nmos_flat_0/DRAIN" "nmos_flat_0/VGND" 0.00730822
-cap "nmos_flat_0/DRAIN" "nmos_flat_0/GATE" 38.8352
-cap "pmos_flat_4/GATE" "pmos_flat_4/DRAIN" 14.8193
-cap "pmos_flat_4/GATE" "pmos_flat_4/DRAIN" 14.9734
-cap "pmos_flat_4/VGND" "pmos_flat_4/GATE" 11.3199
-cap "pmos_flat_4/GATE" "pmos_flat_4/DRAIN" 38.0977
-cap "pmos_flat_4/DRAIN" "pmos_flat_4/a_n2609_n500#" 71.3733
-cap "pmos_flat_4/DRAIN" "pmos_flat_4/GATE" 38.0977
-cap "nmos_flat_0/DRAIN" "nmos_flat_0/VPWR" 0.833584
-cap "nmos_flat_0/DRAIN" "nmos_flat_0/VPWR" 5.21206
-cap "nmos_flat_0/DRAIN" "nmos_flat_0/VPWR" 1.95114
-cap "pmos_flat_4/GATE" "pmos_flat_4/DRAIN" 1.77636e-15
-cap "pmos_flat_4/VPWR" "pmos_flat_4/DRAIN" 3.80412
-cap "pmos_flat_4/VPWR" "pmos_flat_4/DRAIN" 11.7143
-cap "bgr_final_0/vssa1" "vccd1" 0.0993243
-cap "bgr_final_0/vssa1" "vccd1" 2.06673
-cap "bgr_final_0/m1_900_50772#" "vccd1" -3.87717
-cap "bgr_final_0/bgr_top_VIA2_48/m2_n816_n60#" "bgr_final_0/VDD" -559.168
-cap "vssa1" "bgr_final_0/VDD" -164.126
-cap "nmos_flat_1/GATE" "nmos_flat_1/DRAIN" 0.589655
-cap "nmos_flat_1/GATE" "nmos_flat_1/a_2551_n500#" 1.04175
-cap "nmos_flat_1/GATE" "nmos_flat_1/DRAIN" 0.589655
-cap "nmos_flat_1/GATE" "nmos_flat_1/a_2551_n500#" 1.04175
-cap "nmos_flat_1/VGND" "nmos_flat_1/DRAIN" 22.2489
-cap "nmos_flat_1/GATE" "nmos_flat_1/DRAIN" 1.04333
-cap "nmos_flat_1/VGND" "nmos_flat_1/DRAIN" 19.2752
-cap "nmos_flat_1/GATE" "nmos_flat_1/DRAIN" 1.04333
-cap "pmos_flat_2/VGND" "pmos_flat_2/GATE" 2.60492
+cap "la_data_in[59]" "la_data_out[59]" 46.7738
+cap "la_data_out[50]" "la_data_in[50]" 46.7738
+cap "io_oeb[0]" "io_in_3v3[1]" 67.2299
+cap "la_data_in[47]" "la_oenb[46]" 46.7738
+cap "wbs_dat_i[3]" "wbs_dat_o[3]" 46.7738
+cap "io_oeb[26]" "io_out[26]" 67.2299
+cap "io_in[26]" "io_out[26]" 67.2299
+cap "io_analog[5]" "io_analog[5]" 26259.4
+cap "io_out[1]" "io_oeb[1]" 67.2299
+cap "la_oenb[78]" "la_data_out[78]" 46.7738
+cap "la_data_out[66]" "la_oenb[66]" 46.7738
+cap "wbs_dat_o[30]" "wbs_adr_i[31]" 46.7738
+cap "user_irq[2]" "user_irq[1]" 46.7738
+cap "la_data_in[121]" "la_data_out[121]" 46.7738
+cap "la_data_in[120]" "la_oenb[119]" 46.7738
+cap "la_data_in[117]" "la_oenb[116]" 46.7738
+cap "la_oenb[97]" "la_data_in[98]" 46.7738
+cap "la_data_out[86]" "la_data_in[86]" 46.7738
+cap "la_data_in[55]" "la_data_out[55]" 46.7738
+cap "wbs_adr_i[26]" "wbs_dat_i[26]" 46.7738
+cap "la_oenb[53]" "la_data_out[53]" 46.7738
+cap "wbs_dat_i[12]" "wbs_adr_i[12]" 46.7738
+cap "io_in[4]" "io_in_3v3[4]" 67.2299
+cap "io_in[20]" "io_in_3v3[20]" 67.2299
+cap "la_data_in[121]" "la_oenb[120]" 46.7738
+cap "la_oenb[67]" "la_data_in[68]" 46.7738
+cap "vccd1" "gpio_analog[1]" 3716.44
+cap "io_in_3v3[17]" "gpio_noesd[10]" 67.2299
+cap "la_data_out[127]" "la_oenb[127]" 46.7738
+cap "la_oenb[93]" "la_data_in[94]" 46.7738
+cap "la_oenb[71]" "la_data_in[72]" 46.7738
+cap "io_out[9]" "io_oeb[9]" 67.2299
+cap "la_oenb[32]" "la_data_out[32]" 46.7738
+cap "la_data_out[47]" "la_oenb[47]" 46.7738
+cap "wbs_adr_i[1]" "wbs_dat_i[1]" 46.7738
+cap "la_oenb[15]" "la_data_out[15]" 46.7738
+cap "wbs_dat_i[16]" "wbs_dat_o[16]" 46.7738
+cap "gpio_analog[6]" "vssa1" 5404.22
+cap "la_data_out[52]" "la_oenb[52]" 46.7738
+cap "la_data_in[21]" "la_oenb[20]" 46.7738
+cap "la_oenb[20]" "la_data_out[20]" 46.7738
+cap "la_oenb[12]" "la_data_in[13]" 46.7738
+cap "la_oenb[125]" "la_data_out[125]" 46.7738
+cap "la_data_out[111]" "la_data_in[111]" 46.7738
+cap "la_data_out[105]" "la_oenb[105]" 46.7738
+cap "la_data_out[77]" "la_data_in[77]" 46.7738
+cap "io_out[14]" "io_in[14]" 67.2299
+cap "la_data_in[116]" "la_oenb[115]" 46.7738
+cap "la_data_out[6]" "la_oenb[6]" 46.7738
+cap "la_oenb[1]" "la_data_in[2]" 46.7738
+cap "gpio_noesd[5]" "io_in_3v3[12]" 67.2299
+cap "wbs_adr_i[29]" "wbs_dat_i[29]" 46.7738
+cap "io_clamp_low[1]" "io_analog[5]" 468.333
+cap "la_oenb[49]" "la_data_out[49]" 46.7738
+cap "la_data_in[25]" "la_oenb[24]" 46.7738
+cap "wbs_adr_i[10]" "wbs_dat_o[9]" 46.7738
+cap "la_oenb[123]" "la_data_out[123]" 46.7738
+cap "vccd1" "gpio_analog[2]" 2724.6
+cap "io_in[2]" "io_in_3v3[2]" 67.2299
+cap "la_oenb[126]" "la_data_out[126]" 46.7738
+cap "la_oenb[62]" "la_data_in[63]" 46.7738
+cap "la_oenb[58]" "la_data_in[59]" 46.7738
+cap "io_oeb[22]" "io_out[22]" 67.2299
+cap "la_data_out[102]" "la_oenb[102]" 46.7738
+cap "la_oenb[84]" "la_data_out[84]" 46.7738
+cap "la_data_out[54]" "la_data_in[54]" 46.7738
+cap "wbs_adr_i[0]" "wbs_dat_i[0]" 46.7738
+cap "io_in[20]" "io_out[20]" 67.2299
+cap "io_in_3v3[9]" "gpio_noesd[2]" 67.2299
+cap "la_data_in[76]" "la_oenb[75]" 46.7738
+cap "wbs_adr_i[24]" "wbs_dat_i[24]" 46.7738
+cap "io_analog[5]" "io_analog[5]" 26259.4
+cap "gpio_noesd[5]" "gpio_analog[5]" 67.3177
+cap "la_data_out[108]" "la_data_in[108]" 46.7738
+cap "la_oenb[17]" "la_data_in[18]" 46.7738
+cap "la_data_out[16]" "la_oenb[16]" 46.7738
+cap "la_oenb[33]" "la_data_in[34]" 46.7738
+cap "la_data_in[20]" "la_data_out[20]" 46.7738
+cap "la_data_out[9]" "la_oenb[9]" 46.7738
+cap "la_oenb[4]" "la_data_in[5]" 46.7738
+cap "wbs_dat_o[10]" "wbs_dat_i[10]" 46.7738
+cap "io_in[0]" "io_in_3v3[0]" 67.2299
+cap "la_data_out[71]" "la_data_in[71]" 46.7738
+cap "la_data_in[35]" "la_oenb[34]" 46.7738
+cap "la_oenb[18]" "la_data_in[19]" 46.7738
+cap "wbs_dat_i[15]" "wbs_dat_o[15]" 46.7738
+cap "la_data_out[92]" "la_data_in[92]" 46.7738
+cap "la_data_out[106]" "la_data_in[106]" 46.7738
+cap "la_data_out[12]" "la_oenb[12]" 46.7738
+cap "io_in[18]" "io_out[18]" 67.2299
+cap "io_in_3v3[12]" "io_in[12]" 67.2299
+cap "la_data_out[29]" "la_data_in[29]" 46.7738
+cap "io_in_3v3[2]" "io_oeb[1]" 67.2299
+cap "la_data_out[83]" "la_data_in[83]" 46.7738
+cap "la_oenb[74]" "la_data_out[74]" 46.7738
+cap "wbs_dat_i[25]" "wbs_dat_o[25]" 46.7738
+cap "io_out[3]" "io_oeb[3]" 67.2299
+cap "gpio_noesd[16]" "gpio_analog[16]" 67.2299
+cap "la_oenb[101]" "la_data_in[102]" 46.7738
+cap "gpio_noesd[4]" "gpio_analog[4]" 67.2299
+cap "wbs_adr_i[8]" "wbs_dat_o[7]" 46.7738
+cap "la_data_out[111]" "la_oenb[111]" 46.7738
+cap "io_in_3v3[7]" "gpio_noesd[0]" 67.2299
+cap "gpio_analog[4]" "vssa1" 5640.21
+cap "io_in[14]" "io_in_3v3[14]" 67.2299
+cap "la_data_out[109]" "la_data_in[109]" 46.7738
+cap "gpio_noesd[14]" "gpio_analog[14]" 67.2299
+cap "la_data_in[93]" "la_data_out[93]" 46.7738
+cap "nmos_flat_1/SOURCE" "nmos_flat_1/DRAIN" 0.252884
+cap "nmos_flat_1/DRAIN" "nmos_flat_1/SOURCE" 7.10543e-15
+cap "nmos_flat_1/GATE" "nmos_flat_1/VGND" 751.809
+cap "nmos_flat_1/DRAIN" "nmos_flat_1/VGND" 8.02624
+cap "vccd1" "nmos_flat_1/VGND" 7.10543e-15
+cap "pmos_flat_3/GATE" "pmos_flat_3/VGND" 0.259612
+cap "pmos_flat_3/VGND" "pmos_flat_3/GATE" 0.417971
+cap "pmos_flat_3/VGND" "pmos_flat_3/GATE" 0.0289185
+cap "pmos_flat_3/VGND" "pmos_flat_3/DRAIN" 4.9
+cap "nmos_flat_1/SOURCE" "nmos_flat_1/DRAIN" 361.824
+cap "nmos_flat_1/DRAIN" "nmos_flat_1/SOURCE" 97.72
+cap "nmos_flat_1/GATE" "nmos_flat_1/DRAIN" -62.3786
+cap "nmos_flat_1/VGND" "nmos_flat_1/DRAIN" 132.41
+cap "nmos_flat_1/VPWR" "nmos_flat_1/DRAIN" 0.966197
+cap "nmos_flat_1/VGND" "nmos_flat_1/DRAIN" 420.365
+cap "nmos_flat_1/DRAIN" "nmos_flat_1/GATE" -7.78806e-05
+cap "nmos_flat_1/SOURCE" "nmos_flat_1/DRAIN" 85.9357
+cap "nmos_flat_1/SOURCE" "nmos_flat_1/VGND" 0.595621
+cap "nmos_flat_1/SOURCE" "nmos_flat_1/DRAIN" 37.245
+cap "pmos_flat_3/SOURCE" "pmos_flat_3/DRAIN" 13.9701
+cap "pmos_flat_3/SOURCE" "pmos_flat_3/VGND" 0.453316
+cap "pmos_flat_3/SOURCE" "pmos_flat_3/DRAIN" 227.799
+cap "pmos_flat_3/SOURCE" "pmos_flat_3/VGND" 1.50846
+cap "pmos_flat_3/SOURCE" "pmos_flat_3/DRAIN" 40.6139
+cap "pmos_flat_3/SOURCE" "pmos_flat_3/VPWR" -8.52651e-13
+cap "pmos_flat_3/SOURCE" "pmos_flat_3/VGND" 0.174011
+cap "pmos_flat_3/DRAIN" "pmos_flat_3/VPWR" 3.24662
+cap "pmos_flat_3/DRAIN" "pmos_flat_3/GATE" -2.20013
+cap "pmos_flat_3/DRAIN" "pmos_flat_3/SOURCE" 36.7759
+cap "pmos_flat_3/VPWR" "pmos_flat_3/DRAIN" -2.88382
+cap "pmos_flat_3/SOURCE" "pmos_flat_3/DRAIN" 36.7759
+cap "pmos_flat_3/VGND" "pmos_flat_3/DRAIN" 4.9
+cap "nmos_flat_1/DRAIN" "nmos_flat_1/VPWR" 1.1948
+cap "nmos_flat_1/VPWR" "nmos_flat_1/DRAIN" 10.4317
+cap "nmos_flat_1/DRAIN" "nmos_flat_1/VPWR" 3.89366
+cap "pmos_flat_3/DRAIN" "pmos_flat_3/SOURCE" 0.766294
+cap "pmos_flat_3/DRAIN" "pmos_flat_3/SOURCE" 11.1267
+cap "pmos_flat_3/DRAIN" "pmos_flat_3/SOURCE" 0.640523
+cap "pmos_flat_3/VPWR" "pmos_flat_3/SOURCE" -37.6475
+cap "pmos_flat_3/SOURCE" "pmos_flat_3/DRAIN" 1.99642
+cap "pmos_flat_3/VPWR" "pmos_flat_3/DRAIN" 3.80412
+cap "pmos_flat_3/SOURCE" "pmos_flat_3/DRAIN" 1.99642
+cap "pmos_flat_3/VPWR" "pmos_flat_3/DRAIN" 12.9562
+cap "vccd1" "bgr_final_0/vssa1" 0.0993243
+cap "vccd1" "bgr_final_0/vssa1" 2.06673
+cap "vccd1" "bgr_final_0/m1_900_50772#" -3.87717
+cap "bgr_final_0/VDD" "bgr_final_0/bgr_top_VIA2_48/m2_n816_n60#" -559.168
+cap "bgr_final_0/VDD" "vssa1" -164.126
+cap "nmos_flat_0/DRAIN" "nmos_flat_0/SOURCE" 62.7958
+cap "nmos_flat_0/DRAIN" "nmos_flat_0/SOURCE" 26.0245
+cap "nmos_flat_0/SOURCE" "nmos_flat_0/DRAIN" 1.15857
+cap "nmos_flat_0/SOURCE" "nmos_flat_0/VGND" 426.081
+cap "nmos_flat_0/VGND" "nmos_flat_0/DRAIN" 0.481822
+cap "nmos_flat_0/DRAIN" "nmos_flat_0/VGND" 110.488
+cap "nmos_flat_0/DRAIN" "nmos_flat_0/GATE" -4.57299
+cap "nmos_flat_0/DRAIN" "nmos_flat_0/GATE" 493.731
+cap "nmos_flat_0/DRAIN" "nmos_flat_0/VGND" 423.787
+cap "nmos_flat_0/VPWR" "nmos_flat_0/DRAIN" 0.966197
+cap "nmos_flat_0/SOURCE" "nmos_flat_0/DRAIN" 1.69164
+cap "nmos_flat_0/SOURCE" "nmos_flat_0/VGND" 0.553134
+cap "nmos_flat_0/DRAIN" "nmos_flat_0/SOURCE" 1.69164
+cap "pmos_flat_2/SOURCE" "pmos_flat_2/VGND" 2.84217e-14
+cap "pmos_flat_2/SOURCE" "pmos_flat_2/VGND" -7.10543e-15
+cap "pmos_flat_2/DRAIN" "pmos_flat_2/VGND" 4.9
 cap "bgr_final_0/vccd1" "bgr_final_0/vssa1" -504.384
-cap "bgr_final_0/m1_900_50772#" "bgr_final_0/vccd1" -176.623
-cap "bgr_final_0/bgr_top_VIA2_48/m2_n816_n60#" "bgr_final_0/VDD" -3246.66
-cap "bgr_final_0/VDD" "vssa1" -1975.65
-cap "nmos_flat_1/GATE" "nmos_flat_1/a_2551_n500#" 14.6265
-cap "nmos_flat_1/GATE" "nmos_flat_1/DRAIN" 10.2133
-cap "nmos_flat_1/GATE" "nmos_flat_1/DRAIN" 10.2133
-cap "nmos_flat_1/GATE" "nmos_flat_1/a_2551_n500#" 14.6265
-cap "nmos_flat_1/DRAIN" "nmos_flat_1/VPWR" 0.717225
-cap "nmos_flat_1/GATE" "nmos_flat_1/DRAIN" 38.6031
-cap "nmos_flat_1/VPWR" "nmos_flat_1/DRAIN" 1.63144
-cap "nmos_flat_1/VGND" "nmos_flat_1/DRAIN" -6.00788
-cap "nmos_flat_1/DRAIN" "nmos_flat_1/GATE" 38.6031
-cap "nmos_flat_1/DRAIN" "nmos_flat_1/VPWR" 1.63144
-cap "pmos_flat_2/VGND" "pmos_flat_2/GATE" -12.5726
-cap "pmos_flat_2/DRAIN" "pmos_flat_2/GATE" 37.5869
-cap "pmos_flat_2/GATE" "pmos_flat_2/DRAIN" 37.7744
-cap "pmos_flat_2/VPWR" "pmos_flat_2/DRAIN" -0.845908
-cap "pmos_flat_2/DRAIN" "pmos_flat_2/a_n2609_n500#" 43.8242
-cap "pmos_flat_2/DRAIN" "pmos_flat_2/GATE" 42.6116
-cap "pmos_flat_2/DRAIN" "pmos_flat_2/GATE" 42.6116
-cap "pmos_flat_2/DRAIN" "pmos_flat_2/a_n2609_n500#" 43.8242
+cap "bgr_final_0/vccd1" "bgr_final_0/m1_900_50772#" -176.623
+cap "bgr_final_0/VDD" "bgr_final_0/bgr_top_VIA2_48/m2_n816_n60#" -3246.66
+cap "vssa1" "bgr_final_0/VDD" -1975.65
+cap "nmos_flat_0/SOURCE" "nmos_flat_0/DRAIN" 410.47
+cap "nmos_flat_0/SOURCE" "nmos_flat_0/DRAIN" 45.8676
+cap "nmos_flat_0/SOURCE" "nmos_flat_0/VGND" -5.25802e-13
+cap "nmos_flat_0/VPWR" "nmos_flat_0/DRAIN" 0.989276
+cap "nmos_flat_0/VPWR" "nmos_flat_0/DRAIN" 1.62366
+cap "nmos_flat_0/SOURCE" "nmos_flat_0/DRAIN" 35.4443
+cap "nmos_flat_0/DRAIN" "nmos_flat_0/SOURCE" 35.4443
+cap "nmos_flat_0/DRAIN" "nmos_flat_0/VPWR" 0.657461
+cap "pmos_flat_2/DRAIN" "pmos_flat_2/SOURCE" 188.443
+cap "pmos_flat_2/DRAIN" "pmos_flat_2/SOURCE" 167.226
+cap "pmos_flat_2/VPWR" "pmos_flat_2/SOURCE" 1.33582e-12
+cap "pmos_flat_2/DRAIN" "pmos_flat_2/SOURCE" 0.549738
+cap "pmos_flat_2/VPWR" "pmos_flat_2/DRAIN" -4.96535
+cap "pmos_flat_2/GATE" "pmos_flat_2/DRAIN" -140.413
+cap "pmos_flat_2/SOURCE" "pmos_flat_2/DRAIN" 42.4535
+cap "pmos_flat_2/VPWR" "pmos_flat_2/DRAIN" 1.39455
+cap "pmos_flat_2/VGND" "pmos_flat_2/DRAIN" 4.9
+cap "pmos_flat_2/DRAIN" "pmos_flat_2/SOURCE" 42.4535
 cap "bgr_final_0/bgr_top_VIA2_48/m2_n816_n60#" "bgr_final_0/VDD" -354.673
 cap "bgr_final_0/VDD" "vssa1" -23.6191
 cap "bgr_final_0/VDD" "vssa1" 0.238876
 cap "bgr_final_0/vccd1" "vssa1" 0.119726
-cap "nmos_flat_1/DRAIN" "nmos_flat_1/VPWR" 0.0247319
-cap "nmos_flat_1/DRAIN" "nmos_flat_1/VPWR" 0.012831
-cap "nmos_flat_1/DRAIN" "nmos_flat_1/VPWR" 0.012831
-cap "pmos_flat_2/GATE" "pmos_flat_2/DRAIN" -1.06581e-14
-cap "pmos_flat_2/DRAIN" "pmos_flat_2/VPWR" 0.755116
-cap "pmos_flat_2/VPWR" "pmos_flat_2/DRAIN" 7.85106
-cap "pmos_flat_2/DRAIN" "pmos_flat_2/VPWR" 7.85106
-cap "bgr_final_0/vccd1" "vssa1" 0.0452405
-cap "bgr_final_0/vbg" "bgr_final_0/VSS" -59.267
+cap "nmos_flat_0/VPWR" "nmos_flat_0/DRAIN" 0.0741957
+cap "pmos_flat_2/SOURCE" "pmos_flat_2/DRAIN" -6.93889e-18
+cap "pmos_flat_2/SOURCE" "pmos_flat_2/VPWR" -82.3573
+cap "pmos_flat_2/DRAIN" "pmos_flat_2/SOURCE" 0.00831407
+cap "pmos_flat_2/SOURCE" "pmos_flat_2/VPWR" -33.1705
+cap "pmos_flat_2/VPWR" "pmos_flat_2/DRAIN" 1.08233
+cap "pmos_flat_2/VPWR" "pmos_flat_2/DRAIN" 8.7893
+cap "pmos_flat_2/VPWR" "pmos_flat_2/DRAIN" 7.76842
+cap "vssa1" "bgr_final_0/vccd1" 0.0452405
+cap "bgr_final_0/VSS" "bgr_final_0/vbg" -59.267
 cap "bgr_final_0/vbg" "bgr_final_0/VSS" -197.322
 cap "bgr_final_0/porst" "bgr_final_0/VSS" -59.267
-cap "bgr_final_0/porst" "bgr_final_0/VSS" -193.951
-cap "nmos_flat_3/DRAIN" "nmos_flat_3/GATE" 9.4522
-cap "nmos_flat_3/GATE" "nmos_flat_3/a_2551_n500#" 13.2515
-cap "nmos_flat_3/GATE" "nmos_flat_3/a_2551_n500#" 13.5952
-cap "nmos_flat_3/GATE" "nmos_flat_3/DRAIN" 9.4522
-cap "nmos_flat_3/GATE" "nmos_flat_3/DRAIN" -0.14889
-cap "nmos_flat_3/VGND" "nmos_flat_3/DRAIN" -1.09068
-cap "nmos_flat_3/VPWR" "nmos_flat_3/DRAIN" 1.47657
-cap "nmos_flat_3/GATE" "nmos_flat_3/DRAIN" 30.0197
-cap "nmos_flat_3/GATE" "nmos_flat_3/DRAIN" 31.5978
-cap "nmos_flat_3/VGND" "nmos_flat_3/DRAIN" 12.3
-cap "pmos_flat_1/GATE" "pmos_flat_1/DRAIN" 24.4241
-cap "pmos_flat_1/GATE" "pmos_flat_1/VGND" -176.217
-cap "pmos_flat_1/GATE" "pmos_flat_1/DRAIN" 5.72306
-cap "pmos_flat_1/VPWR" "pmos_flat_1/DRAIN" 0.0186474
-cap "pmos_flat_1/VPWR" "pmos_flat_1/GATE" 0.0186474
-cap "pmos_flat_1/DRAIN" "pmos_flat_1/a_n2609_n500#" 36.088
-cap "pmos_flat_1/GATE" "pmos_flat_1/DRAIN" 34.6057
-cap "nmos_flat_3/DRAIN" "nmos_flat_3/VPWR" 0.737017
-cap "nmos_flat_3/VPWR" "vccd1" 16.4209
-cap "nmos_flat_3/VPWR" "nmos_flat_3/DRAIN" 9.61628
-cap "nmos_flat_3/VPWR" "vccd1" 14.4269
-cap "nmos_flat_3/GATE" "nmos_flat_3/DRAIN" 12.1148
-cap "nmos_flat_3/DRAIN" "nmos_flat_3/VPWR" 8.13971
-cap "nmos_flat_3/DRAIN" "nmos_flat_3/GATE" 12.1148
-cap "pmos_flat_1/GATE" "pmos_flat_1/DRAIN" 36.5436
-cap "pmos_flat_1/GATE" "pmos_flat_1/DRAIN" 8.48276
-cap "pmos_flat_1/VPWR" "pmos_flat_1/DRAIN" 0.85814
-cap "pmos_flat_1/DRAIN" "pmos_flat_1/a_n2609_n500#" 54.132
-cap "pmos_flat_1/VPWR" "pmos_flat_1/DRAIN" 16.4
-cap "pmos_flat_1/GATE" "pmos_flat_1/DRAIN" 51.9085
-cap "nmos_flat_3/VPWR" "vccd1" 16.4209
-cap "nmos_flat_3/VPWR" "vccd1" 14.4269
-cap "bgr_final_0/m4_900_0#" "bgr_final_0/m4_3348_0#" -64.002
+cap "bgr_final_0/VSS" "bgr_final_0/porst" -193.951
+cap "nmos_flat_2/DRAIN" "nmos_flat_2/SOURCE" 148.938
+cap "nmos_flat_2/SOURCE" "nmos_flat_2/DRAIN" 118.414
+cap "nmos_flat_2/SOURCE" "nmos_flat_2/VGND" 698.899
+cap "nmos_flat_2/VGND" "nmos_flat_2/DRAIN" 0.157595
+cap "nmos_flat_2/SOURCE" "nmos_flat_2/DRAIN" 0.737168
+cap "nmos_flat_2/DRAIN" "nmos_flat_2/VGND" 40.1947
+cap "nmos_flat_2/DRAIN" "nmos_flat_2/VPWR" 0.966197
+cap "nmos_flat_2/VGND" "nmos_flat_2/SOURCE" 0.678925
+cap "nmos_flat_2/DRAIN" "nmos_flat_2/VGND" 88.5639
+cap "nmos_flat_2/DRAIN" "nmos_flat_2/SOURCE" 30.1994
+cap "nmos_flat_2/SOURCE" "nmos_flat_2/DRAIN" 30.1994
+cap "pmos_flat_1/VGND" "pmos_flat_1/SOURCE" -317.015
+cap "pmos_flat_1/SOURCE" "pmos_flat_1/DRAIN" 153.121
+cap "pmos_flat_1/VGND" "pmos_flat_1/SOURCE" -209.6
+cap "pmos_flat_1/DRAIN" "pmos_flat_1/SOURCE" 107.657
+cap "pmos_flat_1/SOURCE" "pmos_flat_1/VGND" 4.26326e-14
+cap "pmos_flat_1/VGND" "pmos_flat_1/SOURCE" 4.9738e-14
+cap "pmos_flat_1/VPWR" "pmos_flat_1/SOURCE" 3.90799e-14
+cap "pmos_flat_1/SOURCE" "pmos_flat_1/DRAIN" 0.674406
+cap "pmos_flat_1/DRAIN" "pmos_flat_1/VPWR" 0.941711
+cap "pmos_flat_1/DRAIN" "pmos_flat_1/SOURCE" 5.28807
+cap "pmos_flat_1/DRAIN" "pmos_flat_1/VGND" 9.8
+cap "pmos_flat_1/DRAIN" "pmos_flat_1/SOURCE" 51.3229
+cap "pmos_flat_1/DRAIN" "pmos_flat_1/VPWR" 2.30892
+cap "nmos_flat_2/VPWR" "nmos_flat_2/SOURCE" 1.8735e-16
+cap "nmos_flat_2/DRAIN" "nmos_flat_2/SOURCE" 27.2292
+cap "nmos_flat_2/SOURCE" "nmos_flat_2/DRAIN" 26.5504
+cap "nmos_flat_2/DRAIN" "nmos_flat_2/VPWR" 1.05639
+cap "nmos_flat_2/VPWR" "nmos_flat_2/DRAIN" 6.57126
+cap "nmos_flat_2/DRAIN" "nmos_flat_2/SOURCE" 9.10482
+cap "nmos_flat_2/VPWR" "nmos_flat_2/DRAIN" 5.60506
+cap "nmos_flat_2/DRAIN" "nmos_flat_2/SOURCE" 9.10482
+cap "pmos_flat_1/SOURCE" "pmos_flat_1/DRAIN" 138.041
+cap "pmos_flat_1/DRAIN" "pmos_flat_1/SOURCE" 99.7426
+cap "pmos_flat_1/SOURCE" "pmos_flat_1/VPWR" 358.404
+cap "pmos_flat_1/DRAIN" "pmos_flat_1/SOURCE" 6.35966
+cap "pmos_flat_1/DRAIN" "pmos_flat_1/VPWR" 1.23
+cap "pmos_flat_1/VPWR" "pmos_flat_1/DRAIN" 29.5886
+cap "pmos_flat_1/SOURCE" "pmos_flat_1/DRAIN" 61.7232
+cap "bgr_final_0/m4_3348_0#" "bgr_final_0/m4_900_0#" -64.002
 cap "bgr_final_0/m4_900_0#" "bgr_final_0/m4_3348_0#" -1.66646
 cap "vssa1" "bgr_final_0/VDD" -1.23702
-cap "vssa1" "bgr_final_0/m4_3348_0#" 0.126935
+cap "bgr_final_0/m4_3348_0#" "vssa1" 0.126935
 cap "bgr_final_0/m4_900_0#" "bgr_final_0/m4_3348_0#" 0.0295859
 cap "bgr_final_0/m4_900_0#" "bgr_final_0/m4_3348_0#" 4.06043
 cap "bgr_final_0/m1_900_50772#" "bgr_final_0/m4_3348_0#" -24.0423
-cap "bgr_final_0/m1_900_5652#" "bgr_final_0/VDD" -253.885
+cap "bgr_final_0/VDD" "bgr_final_0/m1_900_5652#" -253.885
 cap "bgr_final_0/VSS" "bgr_final_0/VDD" -47.6609
-cap "bgr_final_0/VSS" "bgr_final_0/VDD" 0.494697
-cap "bgr_final_0/VSS" "bgr_final_0/m4_3348_0#" 0.927341
+cap "bgr_final_0/VDD" "bgr_final_0/VSS" 0.494697
+cap "bgr_final_0/m4_3348_0#" "bgr_final_0/VSS" 0.927341
 cap "bgr_final_0/m4_900_0#" "vccd1" 0.0920238
-cap "bgr_final_0/m4_900_0#" "bgr_final_0/m5_0_51648#" 2.28302
+cap "bgr_final_0/m5_0_51648#" "bgr_final_0/m4_900_0#" 2.28302
 cap "bgr_final_0/m1_900_50772#" "bgr_final_0/m5_0_51648#" -10.1797
 cap "bgr_final_0/m1_900_5652#" "bgr_final_0/VDD" 2.11655
 cap "bgr_final_0/VSS" "bgr_final_0/VDD" -1.6564
-cap "nmos_flat_2/GATE" "nmos_flat_2/a_2551_n500#" -1.92014
-cap "nmos_flat_2/VGND" "nmos_flat_2/DRAIN" 2.34286
-cap "nmos_flat_2/DRAIN" "nmos_flat_2/VGND" 7.21832
-cap "vccd1" "nmos_flat_2/VGND" -5.5982
-cap "pmos_flat_0/DRAIN" "pmos_flat_0/VGND" 0.373017
-cap "pmos_flat_0/GATE" "pmos_flat_0/VGND" -2.25932
-cap "pmos_flat_0/DRAIN" "pmos_flat_0/VGND" 0.94689
-cap "nmos_flat_2/GATE" "nmos_flat_2/a_2551_n500#" 1.89536
-cap "nmos_flat_2/DRAIN" "nmos_flat_2/GATE" 1.43922
-cap "nmos_flat_2/GATE" "nmos_flat_2/a_2551_n500#" 1.95772
-cap "nmos_flat_2/DRAIN" "nmos_flat_2/GATE" 1.43922
-cap "nmos_flat_2/DRAIN" "nmos_flat_2/GATE" 43.0492
-cap "nmos_flat_2/VGND" "nmos_flat_2/DRAIN" 2.34286
-cap "nmos_flat_2/DRAIN" "nmos_flat_2/GATE" 43.0492
-cap "nmos_flat_2/DRAIN" "nmos_flat_2/VGND" 7.21832
-cap "pmos_flat_0/DRAIN" "pmos_flat_0/VGND" 0.373017
-cap "pmos_flat_0/GATE" "pmos_flat_0/DRAIN" 61.8968
-cap "pmos_flat_0/DRAIN" "pmos_flat_0/VGND" 0.94689
-cap "pmos_flat_0/GATE" "pmos_flat_0/DRAIN" 16.6169
-cap "pmos_flat_0/DRAIN" "pmos_flat_0/a_n2609_n500#" 17.1948
-cap "pmos_flat_0/DRAIN" "pmos_flat_0/GATE" 13.8618
-cap "pmos_flat_0/DRAIN" "pmos_flat_0/GATE" 13.8618
-cap "pmos_flat_0/DRAIN" "pmos_flat_0/a_n2609_n500#" 17.1948
-cap "nmos_flat_2/DRAIN" "nmos_flat_2/VPWR" 0.745455
-cap "nmos_flat_2/VPWR" "nmos_flat_2/DRAIN" 6.00098
-cap "nmos_flat_2/GATE" "nmos_flat_2/DRAIN" 1.91128
-cap "nmos_flat_2/DRAIN" "nmos_flat_2/GATE" 1.91128
-cap "nmos_flat_2/DRAIN" "nmos_flat_2/VPWR" 4.72378
-cap "pmos_flat_0/GATE" "pmos_flat_0/DRAIN" 0.044674
-cap "pmos_flat_0/GATE" "pmos_flat_0/DRAIN" 0.113403
-cap "pmos_flat_0/VPWR" "pmos_flat_0/DRAIN" 2.37045
-cap "pmos_flat_0/VPWR" "pmos_flat_0/DRAIN" 2.37045
-cap "nmos_flat_2/DRAIN" "nmos_flat_2/VPWR" 0.624963
-cap "pmos_flat_0/VPWR" "vccd1" -0.064644
-merge "nmos_flat_2/GATE" "pmos_flat_0/SUB" -77159.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -99256626 -14306 0 0 0 0 28814615 -57884 -4485152 -16880 0 0
-merge "pmos_flat_0/SUB" "pmos_flat_0/VGND"
-merge "pmos_flat_0/VGND" "nmos_flat_2/VGND"
-merge "nmos_flat_2/VGND" "m1_565844_491493#"
-merge "m1_565844_491493#" "bgr_final_0/VSS"
-merge "bgr_final_0/VSS" "bgr_final_0/m4_900_0#"
-merge "bgr_final_0/m4_900_0#" "pmos_flat_1/SUB"
-merge "pmos_flat_1/SUB" "pmos_flat_1/VGND"
-merge "pmos_flat_1/VGND" "nmos_flat_3/GATE"
-merge "nmos_flat_3/GATE" "nmos_flat_3/VGND"
-merge "nmos_flat_3/VGND" "m1_565664_402464#"
-merge "m1_565664_402464#" "pmos_flat_2/SUB"
-merge "pmos_flat_2/SUB" "pmos_flat_2/VGND"
-merge "pmos_flat_2/VGND" "nmos_flat_1/VGND"
-merge "nmos_flat_1/VGND" "m1_565792_357004#"
-merge "m1_565792_357004#" "nmos_flat_1/GATE"
-merge "nmos_flat_1/GATE" "bgr_final_0/bgr_top_VIA2_48/m2_n816_n60#"
-merge "bgr_final_0/bgr_top_VIA2_48/m2_n816_n60#" "bgr_final_0/vssa1"
-merge "bgr_final_0/vssa1" "bgr_final_0/SUB"
-merge "bgr_final_0/SUB" "pmos_flat_4/VGND"
+cap "nmos_flat_3/SOURCE" "nmos_flat_3/DRAIN" 208.744
+cap "nmos_flat_3/SOURCE" "nmos_flat_3/DRAIN" 287.578
+cap "nmos_flat_3/SOURCE" "nmos_flat_3/VGND" 419.989
+cap "nmos_flat_3/SOURCE" "nmos_flat_3/DRAIN" 1.02559
+cap "nmos_flat_3/VGND" "nmos_flat_3/DRAIN" 0.553185
+cap "nmos_flat_3/VGND" "nmos_flat_3/DRAIN" 143.867
+cap "nmos_flat_3/DRAIN" "nmos_flat_3/GATE" -7.22475
+cap "nmos_flat_3/VPWR" "nmos_flat_3/DRAIN" 0.966197
+cap "nmos_flat_3/SOURCE" "nmos_flat_3/DRAIN" 22.6679
+cap "nmos_flat_3/GATE" "nmos_flat_3/DRAIN" 486.225
+cap "nmos_flat_3/VGND" "nmos_flat_3/DRAIN" 416.533
+cap "nmos_flat_3/DRAIN" "nmos_flat_3/SOURCE" 22.6679
+cap "pmos_flat_0/SOURCE" "pmos_flat_0/DRAIN" 13.7408
+cap "pmos_flat_0/DRAIN" "pmos_flat_0/SOURCE" 264.508
+cap "pmos_flat_0/VGND" "pmos_flat_0/SOURCE" 5.68434e-14
+cap "pmos_flat_0/VPWR" "pmos_flat_0/SOURCE" 5.68434e-14
+cap "pmos_flat_0/DRAIN" "pmos_flat_0/SOURCE" 0.826972
+cap "pmos_flat_0/GATE" "pmos_flat_0/DRAIN" -108.249
+cap "pmos_flat_0/VGND" "pmos_flat_0/DRAIN" 8.1
+cap "pmos_flat_0/VPWR" "pmos_flat_0/DRAIN" 2.58996
+cap "pmos_flat_0/DRAIN" "pmos_flat_0/SOURCE" 23.1978
+cap "pmos_flat_0/VGND" "pmos_flat_0/DRAIN" 1.7
+cap "pmos_flat_0/VPWR" "pmos_flat_0/DRAIN" 0.160811
+cap "pmos_flat_0/SOURCE" "pmos_flat_0/DRAIN" 23.1978
+cap "nmos_flat_3/VPWR" "nmos_flat_3/SOURCE" 1.77636e-15
+cap "nmos_flat_3/DRAIN" "nmos_flat_3/SOURCE" 114.958
+cap "nmos_flat_3/SOURCE" "nmos_flat_3/VPWR" -1.95399e-14
+cap "nmos_flat_3/SOURCE" "nmos_flat_3/DRAIN" 185.414
+cap "nmos_flat_3/SOURCE" "nmos_flat_3/VPWR" -1.95399e-14
+cap "nmos_flat_3/DRAIN" "nmos_flat_3/VPWR" 1.08604
+cap "nmos_flat_3/VPWR" "nmos_flat_3/DRAIN" 3.42843
+cap "nmos_flat_3/DRAIN" "nmos_flat_3/SOURCE" 16.5499
+cap "nmos_flat_3/VPWR" "nmos_flat_3/DRAIN" 2.46223
+cap "nmos_flat_3/SOURCE" "nmos_flat_3/DRAIN" 16.5499
+cap "pmos_flat_0/DRAIN" "pmos_flat_0/SOURCE" 3.87348
+cap "pmos_flat_0/SOURCE" "pmos_flat_0/VPWR" -51.5239
+cap "pmos_flat_0/SOURCE" "pmos_flat_0/DRAIN" 65.7268
+cap "pmos_flat_0/VPWR" "pmos_flat_0/SOURCE" -26.4757
+cap "pmos_flat_0/DRAIN" "pmos_flat_0/VPWR" 4.30866
+cap "pmos_flat_0/DRAIN" "pmos_flat_0/SOURCE" 6.85116
+cap "pmos_flat_0/DRAIN" "pmos_flat_0/SOURCE" 6.85116
+cap "pmos_flat_0/VPWR" "pmos_flat_0/DRAIN" 7.24561
+cap "vccd1" "pmos_flat_0/VPWR" -0.114121
+cap "nmos_flat_5/VGND" "nmos_flat_5/SOURCE" -37.037
+cap "nmos_flat_5/SOURCE" "nmos_flat_5/DRAIN" 74.0747
+cap "nmos_flat_5/DRAIN" "nmos_flat_5/SOURCE" 63.5891
+cap "nmos_flat_5/DRAIN" "nmos_flat_5/SOURCE" 0.536398
+cap "nmos_flat_5/DRAIN" "nmos_flat_5/VGND" 0.146171
+cap "nmos_flat_5/VGND" "nmos_flat_5/SOURCE" 265.885
+cap "nmos_flat_5/GATE" "nmos_flat_5/DRAIN" -105.557
+cap "nmos_flat_5/VGND" "nmos_flat_5/DRAIN" 143.231
+cap "nmos_flat_5/VPWR" "nmos_flat_5/DRAIN" 0.966197
+cap "nmos_flat_5/DRAIN" "nmos_flat_5/VGND" 65.5727
+cap "nmos_flat_5/DRAIN" "nmos_flat_5/VGND" -2.84217e-14
+cap "pmos_flat_5/VGND" "pmos_flat_5/SOURCE" -12.8511
+cap "pmos_flat_5/SOURCE" "pmos_flat_5/DRAIN" 102.913
+cap "pmos_flat_5/SOURCE" "pmos_flat_5/VGND" 0.249085
+cap "pmos_flat_5/SOURCE" "pmos_flat_5/VGND" 0.26515
+cap "pmos_flat_5/SOURCE" "pmos_flat_5/DRAIN" 93.5079
+cap "pmos_flat_5/VGND" "pmos_flat_5/SOURCE" 4.26326e-14
+cap "pmos_flat_5/VPWR" "pmos_flat_5/SOURCE" 5.68434e-14
+cap "pmos_flat_5/DRAIN" "pmos_flat_5/SOURCE" 5.1544
+cap "pmos_flat_5/VPWR" "pmos_flat_5/DRAIN" 2.1748
+cap "pmos_flat_5/VGND" "pmos_flat_5/DRAIN" 9.8
+cap "pmos_flat_5/GATE" "pmos_flat_5/DRAIN" 24.626
+cap "nmos_flat_5/SOURCE" "nmos_flat_5/DRAIN" 15.035
+cap "nmos_flat_5/SOURCE" "nmos_flat_5/DRAIN" 14.4358
+cap "nmos_flat_5/VPWR" "nmos_flat_5/SOURCE" 1.42109e-14
+cap "nmos_flat_5/VGND" "nmos_flat_5/SOURCE" -6.82121e-13
+cap "nmos_flat_5/DRAIN" "nmos_flat_5/VPWR" 0.966197
+cap "pmos_flat_5/DRAIN" "pmos_flat_5/SOURCE" 32.781
+cap "pmos_flat_5/DRAIN" "pmos_flat_5/SOURCE" 32.1524
+cap "pmos_flat_5/VPWR" "pmos_flat_5/SOURCE" -46.1945
+cap "pmos_flat_5/VPWR" "pmos_flat_5/DRAIN" 1.02088
+cap "nmos_flat_4/SOURCE" "nmos_flat_4/DRAIN" 4.89877
+cap "nmos_flat_4/SOURCE" "nmos_flat_4/DRAIN" 4.24202
+cap "nmos_flat_4/DRAIN" "nmos_flat_4/VGND" 3.89965
+cap "nmos_flat_4/VGND" "nmos_flat_4/SOURCE" 564.956
+cap "nmos_flat_4/DRAIN" "nmos_flat_4/SOURCE" 5.55953
+cap "nmos_flat_4/DRAIN" "nmos_flat_4/VGND" 137.471
+cap "nmos_flat_4/GATE" "nmos_flat_4/DRAIN" 33.5588
+cap "nmos_flat_4/DRAIN" "nmos_flat_4/VPWR" 0.966197
+cap "nmos_flat_4/DRAIN" "nmos_flat_4/VGND" 61.959
+cap "pmos_flat_4/SOURCE" "pmos_flat_4/VGND" -1.49465
+cap "pmos_flat_4/DRAIN" "pmos_flat_4/VGND" 1.968
+cap "pmos_flat_4/SOURCE" "pmos_flat_4/DRAIN" 28.9269
+cap "pmos_flat_4/VGND" "pmos_flat_4/SOURCE" 2.829
+cap "pmos_flat_4/SOURCE" "pmos_flat_4/DRAIN" 28.9581
+cap "pmos_flat_4/VGND" "pmos_flat_4/DRAIN" 0.861
+cap "pmos_flat_4/GATE" "pmos_flat_4/DRAIN" 53.9425
+cap "pmos_flat_4/SOURCE" "pmos_flat_4/DRAIN" 3.51499
+cap "pmos_flat_4/DRAIN" "pmos_flat_4/VGND" 9.8
+cap "pmos_flat_4/VPWR" "pmos_flat_4/DRAIN" 1.02088
+cap "pmos_flat_4/DRAIN" "pmos_flat_4/SOURCE" 1.60925
+cap "nmos_flat_4/SOURCE" "nmos_flat_4/DRAIN" 108.816
+cap "nmos_flat_4/SOURCE" "nmos_flat_4/DRAIN" 97.3228
+cap "nmos_flat_4/VGND" "nmos_flat_4/SOURCE" 1.90425e-12
+cap "nmos_flat_4/DRAIN" "nmos_flat_4/VPWR" 0.168383
+cap "nmos_flat_4/SOURCE" "nmos_flat_4/DRAIN" 46.3763
+cap "nmos_flat_4/VGND" "nmos_flat_4/DRAIN" -1.30686
+cap "nmos_flat_4/SOURCE" "nmos_flat_4/DRAIN" 46.3763
+cap "pmos_flat_4/SOURCE" "pmos_flat_4/DRAIN" 210.668
+cap "pmos_flat_4/SOURCE" "pmos_flat_4/DRAIN" 360.226
+cap "pmos_flat_4/SOURCE" "pmos_flat_4/VPWR" 362.881
+cap "pmos_flat_4/VPWR" "pmos_flat_4/DRAIN" 1.16351
+cap "pmos_flat_4/VPWR" "pmos_flat_4/DRAIN" 20.9031
+cap "pmos_flat_4/SOURCE" "pmos_flat_4/DRAIN" 88.9848
+cap "pmos_flat_4/DRAIN" "pmos_flat_4/SOURCE" 40.7394
+cap "pmos_flat_4/DRAIN" "pmos_flat_4/VPWR" 7.58571
+cap "nmos_flat_4/VPWR" "nmos_flat_4/SOURCE" 8.88178e-15
+cap "nmos_flat_4/DRAIN" "nmos_flat_4/VPWR" 0.865971
+cap "nmos_flat_4/VPWR" "nmos_flat_4/DRAIN" 0.966197
+cap "nmos_flat_4/DRAIN" "nmos_flat_4/VPWR" 1.42109e-14
+cap "pmos_flat_4/DRAIN" "pmos_flat_4/VPWR" 0.0277027
+cap "pmos_flat_4/VPWR" "pmos_flat_4/DRAIN" 0.336986
+cap "pmos_flat_4/VPWR" "pmos_flat_4/DRAIN" 0.128571
+merge "nmos_flat_4/SOURCE" "pmos_flat_4/VGND" -304941 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -82136686 -4246 -174931492 -11908 -10534600 0 -98450656 -123745 28854460 -91973 -4485152 -16880 0 0
 merge "pmos_flat_4/VGND" "pmos_flat_4/SUB"
-merge "pmos_flat_4/SUB" "nmos_flat_0/GATE"
-merge "nmos_flat_0/GATE" "m1_565562_311061#"
-merge "m1_565562_311061#" "SUB"
-merge "SUB" "nmos_flat_0/VGND"
-merge "nmos_flat_0/VGND" "vssa1"
-merge "nmos_flat_2/VPWR" "pmos_flat_0/VPWR" -48829.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -44070575 -26302 0 0 0 0 0 0 39016869 -99897 0 0
-merge "pmos_flat_0/VPWR" "pmos_flat_0/GATE"
+merge "pmos_flat_4/SUB" "nmos_flat_4/SUB"
+merge "nmos_flat_4/SUB" "m1_565822_581106#"
+merge "m1_565822_581106#" "nmos_flat_4/VGND"
+merge "nmos_flat_4/VGND" "nmos_flat_4/GATE"
+merge "nmos_flat_4/GATE" "nmos_flat_5/SOURCE"
+merge "nmos_flat_5/SOURCE" "nmos_flat_5/GATE"
+merge "nmos_flat_5/GATE" "pmos_flat_5/SUB"
+merge "pmos_flat_5/SUB" "pmos_flat_5/VGND"
+merge "pmos_flat_5/VGND" "nmos_flat_5/SUB"
+merge "nmos_flat_5/SUB" "m1_565574_507424#"
+merge "m1_565574_507424#" "nmos_flat_5/VGND"
+merge "nmos_flat_5/VGND" "bandgaptop_flat_io_0/bandgaptop_flat_0/GND"
+merge "bandgaptop_flat_io_0/bandgaptop_flat_0/GND" "nmos_flat_3/SUB"
+merge "nmos_flat_3/SUB" "pmos_flat_0/SUB"
+merge "pmos_flat_0/SUB" "pmos_flat_1/SUB"
+merge "pmos_flat_1/SUB" "nmos_flat_2/SUB"
+merge "nmos_flat_2/SUB" "pmos_flat_2/SUB"
+merge "pmos_flat_2/SUB" "nmos_flat_0/SUB"
+merge "nmos_flat_0/SUB" "bgr_final_0/SUB"
+merge "bgr_final_0/SUB" "pmos_flat_3/SUB"
+merge "pmos_flat_3/SUB" "nmos_flat_1/SUB"
+merge "nmos_flat_1/SUB" "SUB"
+merge "SUB" "nmos_flat_3/SOURCE"
+merge "nmos_flat_3/SOURCE" "nmos_flat_3/VGND"
+merge "nmos_flat_3/VGND" "pmos_flat_0/VGND"
+merge "pmos_flat_0/VGND" "m1_565820_447081#"
+merge "m1_565820_447081#" "nmos_flat_3/GATE"
+merge "nmos_flat_3/GATE" "bgr_final_0/VSS"
+merge "bgr_final_0/VSS" "bgr_final_0/m4_900_0#"
+merge "bgr_final_0/m4_900_0#" "nmos_flat_2/SOURCE"
+merge "nmos_flat_2/SOURCE" "pmos_flat_1/VGND"
+merge "pmos_flat_1/VGND" "nmos_flat_2/GATE"
+merge "nmos_flat_2/GATE" "nmos_flat_2/VGND"
+merge "nmos_flat_2/VGND" "m1_565664_402464#"
+merge "m1_565664_402464#" "nmos_flat_0/SOURCE"
+merge "nmos_flat_0/SOURCE" "pmos_flat_2/VGND"
+merge "pmos_flat_2/VGND" "nmos_flat_0/VGND"
+merge "nmos_flat_0/VGND" "m1_565792_357004#"
+merge "m1_565792_357004#" "nmos_flat_0/GATE"
+merge "nmos_flat_0/GATE" "bgr_final_0/bgr_top_VIA2_48/m2_n816_n60#"
+merge "bgr_final_0/bgr_top_VIA2_48/m2_n816_n60#" "bgr_final_0/vssa1"
+merge "bgr_final_0/vssa1" "nmos_flat_1/SOURCE"
+merge "nmos_flat_1/SOURCE" "pmos_flat_3/VGND"
+merge "pmos_flat_3/VGND" "nmos_flat_1/VGND"
+merge "nmos_flat_1/VGND" "m1_565562_311061#"
+merge "m1_565562_311061#" "nmos_flat_1/GATE"
+merge "nmos_flat_1/GATE" "vssa1"
+merge "pmos_flat_4/DRAIN" "nmos_flat_4/DRAIN" -110550 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25504216 -2410 -89605576 -9584 -20708576 -1004 -5587536 -37568 7630854 -17220 0 0 0 0
+merge "nmos_flat_4/DRAIN" "bandgaptop_flat_io_0/bandgaptop_flat_0/porst"
+merge "bandgaptop_flat_io_0/bandgaptop_flat_0/porst" "gpio_analog[6]"
+merge "pmos_flat_5/DRAIN" "nmos_flat_5/DRAIN" -359864 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11580928 -2388 -43207232 -1154 -46612384 -992 -463205856 -203112 -16866792 -464 0 0 0 0
+merge "nmos_flat_5/DRAIN" "bandgaptop_flat_io_0/bandgaptop_flat_0/bandgapcorev3_0/Vbg"
+merge "bandgaptop_flat_io_0/bandgaptop_flat_0/bandgapcorev3_0/Vbg" "gpio_analog[5]"
+merge "pmos_flat_4/SOURCE" "pmos_flat_4/VPWR" -451639 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -71832152 -5158 -99161696 -12224 -9320216 0 -407279978 -141140 -32192645 -38370 69970327 -124172 0 0
+merge "pmos_flat_4/VPWR" "nmos_flat_4/VPWR"
+merge "nmos_flat_4/VPWR" "pmos_flat_4/GATE"
+merge "pmos_flat_4/GATE" "pmos_flat_5/VPWR"
+merge "pmos_flat_5/VPWR" "pmos_flat_5/SOURCE"
+merge "pmos_flat_5/SOURCE" "nmos_flat_5/VPWR"
+merge "nmos_flat_5/VPWR" "pmos_flat_5/GATE"
+merge "pmos_flat_5/GATE" "bandgaptop_flat_io_0/bandgaptop_flat_0/VDD"
+merge "bandgaptop_flat_io_0/bandgaptop_flat_0/VDD" "pmos_flat_0/VPWR"
+merge "pmos_flat_0/VPWR" "pmos_flat_0/SOURCE"
+merge "pmos_flat_0/SOURCE" "nmos_flat_3/VPWR"
+merge "nmos_flat_3/VPWR" "pmos_flat_0/GATE"
 merge "pmos_flat_0/GATE" "bgr_final_0/m4_3348_0#"
 merge "bgr_final_0/m4_3348_0#" "pmos_flat_1/VPWR"
-merge "pmos_flat_1/VPWR" "nmos_flat_3/VPWR"
-merge "nmos_flat_3/VPWR" "pmos_flat_1/GATE"
+merge "pmos_flat_1/VPWR" "pmos_flat_1/SOURCE"
+merge "pmos_flat_1/SOURCE" "nmos_flat_2/VPWR"
+merge "nmos_flat_2/VPWR" "pmos_flat_1/GATE"
 merge "pmos_flat_1/GATE" "pmos_flat_2/VPWR"
-merge "pmos_flat_2/VPWR" "nmos_flat_1/VPWR"
-merge "nmos_flat_1/VPWR" "pmos_flat_2/GATE"
+merge "pmos_flat_2/VPWR" "pmos_flat_2/SOURCE"
+merge "pmos_flat_2/SOURCE" "nmos_flat_0/VPWR"
+merge "nmos_flat_0/VPWR" "pmos_flat_2/GATE"
 merge "pmos_flat_2/GATE" "bgr_final_0/VDD"
 merge "bgr_final_0/VDD" "bgr_final_0/m5_0_51648#"
-merge "bgr_final_0/m5_0_51648#" "pmos_flat_4/VPWR"
-merge "pmos_flat_4/VPWR" "nmos_flat_0/VPWR"
-merge "nmos_flat_0/VPWR" "pmos_flat_4/GATE"
-merge "pmos_flat_4/GATE" "vccd1"
-merge "nmos_flat_2/DRAIN" "pmos_flat_0/DRAIN" -54148.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21651062 -11286 -49318328 -1888 1070367 -41844 0 0 0 0 0 0
-merge "pmos_flat_0/DRAIN" "bgr_final_0/va"
-merge "bgr_final_0/va" "gpio_analog[5]"
-merge "pmos_flat_1/DRAIN" "nmos_flat_3/DRAIN" -130698 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -83691842 -11468 -138786246 -1616 22123215 -71382 0 0 0 0 0 0
-merge "nmos_flat_3/DRAIN" "bgr_final_0/porst"
+merge "bgr_final_0/m5_0_51648#" "pmos_flat_3/SOURCE"
+merge "pmos_flat_3/SOURCE" "pmos_flat_3/VPWR"
+merge "pmos_flat_3/VPWR" "nmos_flat_1/VPWR"
+merge "nmos_flat_1/VPWR" "pmos_flat_3/GATE"
+merge "pmos_flat_3/GATE" "vccd1"
+merge "pmos_flat_0/DRAIN" "nmos_flat_3/DRAIN" -119343 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10415872 -3574 -67720200 -10094 -106808036 -1684 -13908194 -38472 0 0 0 0 0 0
+merge "nmos_flat_3/DRAIN" "bgr_final_0/va"
+merge "bgr_final_0/va" "gpio_analog[4]"
+merge "pmos_flat_1/DRAIN" "nmos_flat_2/DRAIN" -163862 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12398240 -3942 -113564990 -9880 -138786246 -1616 11897110 -68022 0 0 0 0 0 0
+merge "nmos_flat_2/DRAIN" "bgr_final_0/porst"
 merge "bgr_final_0/porst" "gpio_analog[3]"
-merge "bgr_final_0/vbg" "pmos_flat_2/DRAIN" -86409.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -58217963 -5910 -80382692 -756 1445150 -33288 0 0 0 0 0 0
-merge "pmos_flat_2/DRAIN" "nmos_flat_1/DRAIN"
-merge "nmos_flat_1/DRAIN" "gpio_analog[2]"
-merge "bgr_final_0/vb" "pmos_flat_4/DRAIN" -48340.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -34105020 -6608 -36828768 -748 14777865 -31876 0 0 0 0 0 0
-merge "pmos_flat_4/DRAIN" "nmos_flat_0/DRAIN"
-merge "nmos_flat_0/DRAIN" "gpio_analog[1]"
+merge "bgr_final_0/vbg" "pmos_flat_2/DRAIN" -179018 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -37079780 -3504 -120530648 -10602 -103769048 -1632 -7875634 -39588 0 0 0 0 0 0
+merge "pmos_flat_2/DRAIN" "nmos_flat_0/DRAIN"
+merge "nmos_flat_0/DRAIN" "gpio_analog[2]"
+merge "bgr_final_0/vb" "pmos_flat_3/DRAIN" -131060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -35528976 -3428 -83123364 -10936 -65343840 -1616 7290606 -37925 0 0 0 0 0 0
+merge "pmos_flat_3/DRAIN" "nmos_flat_1/DRAIN"
+merge "nmos_flat_1/DRAIN" "gpio_analog[1]"

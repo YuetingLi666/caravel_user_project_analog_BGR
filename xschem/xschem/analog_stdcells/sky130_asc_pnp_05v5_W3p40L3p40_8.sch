@@ -69,5 +69,10 @@ spiceprefix=X
 C {devices/iopin.sym} 110 -600 2 0 {name=p1 lab=Base}
 C {devices/iopin.sym} 110 -560 2 0 {name=p2 lab=Emitter}
 C {devices/iopin.sym} 100 -370 2 0 {name=p3 lab=Collector}
-C {devices/iopin.sym} 110 -680 2 0 {name=p4 lab=vccd1}
-C {devices/iopin.sym} 110 -650 2 0 {name=p5 lab=vssa1}
+C {devices/iopin.sym} 100 -710 2 0 {name=p4 lab=VPWR
+}
+C {devices/iopin.sym} 100 -680 2 0 {name=p5 lab=VGND
+}
+C {devices/iopin.sym} 100 -650 2 0 {name=p6 lab=VSUB
+
+}

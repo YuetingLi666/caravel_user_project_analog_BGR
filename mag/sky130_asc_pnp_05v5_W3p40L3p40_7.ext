@@ -1,4 +1,4 @@
-timestamp 1654899324
+timestamp 1653552238
 version 8.3
 tech sky130A
 style ngspice()
@@ -58,10 +58,10 @@ equiv "Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector"
 equiv "Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector"
 equiv "Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Collector"
 cap "Base" "Emitter" 15518.7
-cap "Emitter" "VPWR" 797.806
-cap "Base" "VPWR" 1391.32
-cap "VGND" "Emitter" 797.806
 cap "VGND" "Base" 818.51
+cap "VPWR" "Base" 1391.32
+cap "VGND" "Emitter" 797.806
+cap "VPWR" "Emitter" 797.806
 device msubckt sky130_fd_pr__pnp_05v5 8313 423 8314 424 "None" "Base" 0 0 "Emitter" 0 0 "Collector" 0 0
 device msubckt sky130_fd_pr__pnp_05v5 6973 423 6974 424 "None" "Base" 0 0 "Emitter" 0 0 "Collector" 0 0
 device msubckt sky130_fd_pr__pnp_05v5 5633 423 5634 424 "None" "Base" 0 0 "Emitter" 0 0 "Collector" 0 0

@@ -32,5 +32,9 @@ spiceprefix=X
 mult=1}
 C {devices/iopin.sym} 390 -610 0 0 {name=p1 lab=Rin}
 C {devices/iopin.sym} 520 -610 0 0 {name=p2 lab=Rout}
-C {devices/iopin.sym} 220 -580 0 0 {name=p3 lab=vccd1}
-C {devices/iopin.sym} 290 -500 2 0 {name=p4 lab=vssa1}
+C {devices/iopin.sym} 220 -580 0 0 {name=p3 lab=VPWR
+}
+C {devices/iopin.sym} 290 -500 2 0 {name=p4 lab=VSUB
+}
+C {devices/iopin.sym} 290 -430 2 0 {name=p5 lab=VGND
+}
